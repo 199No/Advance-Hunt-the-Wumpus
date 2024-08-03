@@ -6,14 +6,26 @@
 //etc
 
 
-
 public class main {
 
-    public static void Main(String[] args) {
+    public static void main(String[] args){
 
         System.out.println("Ran Main without Errors");
 
-    }
+        Player bob = new Player("Bob");
+        System.out.println(bob.getName());
 
+        // Create the Gui frame
+        Gui gui = new Gui();
+
+        // Create the Panel
+        Panel panel = new Panel();
+        
+        // Add the Panel to the Gui frame
+        gui.add(panel);
+        
+        // Set the player position to display the coin
+        panel.setPlayerPosition(0, 0);
+    }
 }
 
