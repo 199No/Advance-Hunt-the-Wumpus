@@ -15,7 +15,7 @@ class Player{
     //////////////////////
 
     //Method sets both Values
-    public void setPostion(int xGiven, yGiven){
+    public void setPostion(int xGiven, int yGiven){
 
         //Setting old values to new given ones
         x = xGiven;
@@ -33,6 +33,11 @@ class Player{
         y = yGiven;
     }
 
+    //Set Name Method
+    public void setName(String nameGiven){
+        name = nameGiven;
+    }
+
     //////////////////////
     // Getters
     //////////////////////
@@ -45,6 +50,11 @@ class Player{
     //Method Returns y
     public int getY(){
         return y;
+    }
+
+    //Method Returns Names
+    public String getName(){
+        return name;
     }
 
 }

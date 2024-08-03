@@ -7,11 +7,11 @@
 
 
 
-public class Main {
+public class main {
 
-    public static void main(String[] args) {
+    public static void Main(String[] args) {
 
-        system.out.println("Ran Main without Errors");
+        System.out.println("Ran Main without Errors");
 
     }
 
