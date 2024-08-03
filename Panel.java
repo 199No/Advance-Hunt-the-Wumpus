@@ -9,13 +9,23 @@ public class Panel extends JPanel {
     private int playerY = 0;
     public Player tempPlayer;
     private int IdleFrameCounter = 1;
+    private int WalkingFrameCounter = 1;
 
     //Images
     private Image coin;
+
     private Image Player_Idle_1;
     private Image Player_Idle_2;
     private Image Player_Idle_3;
     private Image Player_Idle_4;
+
+    private Image Player_Walking_1;
+    private Image Player_Walking_2;
+    private Image Player_Walking_3;
+    private Image Player_Walking_4;
+    private Image Player_Walking_5;
+    private Image Player_Walking_6;
+
 
     public Panel(Player playerPlayer) {
 
@@ -33,6 +43,16 @@ public class Panel extends JPanel {
         Player_Idle_3 = Toolkit.getDefaultToolkit().getImage("Player_Idle_3.png").getScaledInstance(100, 161, Image.SCALE_DEFAULT);
         Player_Idle_4 = Toolkit.getDefaultToolkit().getImage("Player_Idle_4.png").getScaledInstance(100, 161, Image.SCALE_DEFAULT);
         
+        Player_Walking_1 = Toolkit.getDefaultToolkit().getImage("Player_Walking_1.png").getScaledInstance(100, 161, Image.SCALE_DEFAULT);
+        Player_Walking_2 = Toolkit.getDefaultToolkit().getImage("Player_Walking_2.png").getScaledInstance(100, 161, Image.SCALE_DEFAULT);
+        Player_Walking_3 = Toolkit.getDefaultToolkit().getImage("Player_Walking_3.png").getScaledInstance(100, 161, Image.SCALE_DEFAULT);
+        Player_Walking_4 = Toolkit.getDefaultToolkit().getImage("Player_Walking_4.png").getScaledInstance(100, 161, Image.SCALE_DEFAULT);
+        Player_Walking_5 = Toolkit.getDefaultToolkit().getImage("Player_Walking_5.png").getScaledInstance(100, 161, Image.SCALE_DEFAULT);
+        Player_Walking_6 = Toolkit.getDefaultToolkit().getImage("Player_Walking_6.png").getScaledInstance(100, 161, Image.SCALE_DEFAULT);
+
+
+
+
     }
 
     public void setPlayerPosition(int x, int y) {
@@ -74,6 +94,31 @@ public class Panel extends JPanel {
         }
         if(tempPlayer.getState() == "Walking"){
             
+            //Depending on Frame Counter
+            if(WalkingFrameCounter == 1){
+                g.drawImage(Player_Walking_1, 0, 0, this);
+                WalkingFrameCounter = 2;
+            }
+            else if(WalkingFrameCounter == 2){
+                g.drawImage(Player_Walking_2, 0, 0, this);
+                WalkingFrameCounter = 3;
+            }
+            else if(WalkingFrameCounter == 3){
+                g.drawImage(Player_Walking_3, 0, 0, this);
+                WalkingFrameCounter = 4;
+            }
+            else if(WalkingFrameCounter == 4){
+                g.drawImage(Player_Walking_4, 0, 0, this);
+                WalkingFrameCounter = 5;
+            }
+            else if(WalkingFrameCounter == 5){
+                g.drawImage(Player_Walking_5, 0, 0, this);
+                WalkingFrameCounter = 6;
+            }
+            else if(WalkingFrameCounter == 6){
+                g.drawImage(Player_Walking_6, 0, 0, this);
+                WalkingFrameCounter = 1;
+            }
         }
         
     }
