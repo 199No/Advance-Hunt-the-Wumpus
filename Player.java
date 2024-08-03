@@ -1,5 +1,5 @@
 class Player{
-
+    private Panel panel;
     private String name;
     private int x;
     private int y;
@@ -7,6 +7,22 @@ class Player{
 
     public Player(String nameGiven){
 
+        name = nameGiven;
+
+    }
+    public Player(){
+
+        name = "None";
+
+    }
+    public Player(Panel thePanel){
+
+        panel = thePanel;
+
+    }
+    public Player(Panel thePanel, String nameGiven){
+
+        panel = thePanel;
         name = nameGiven;
 
     }
@@ -68,6 +84,31 @@ class Player{
     //Method Returns Names
     public String getName(){
         return name;
+    }
+
+    //Set Panel
+    public void setPanel(Panel thePanel){
+        panel = thePanel;
+    }
+
+    ///////////////////////
+    // Movement Methods
+    ///////////////////////
+
+    //Increase the y vaule method
+    public void moveUp(){
+        y -= 50;
+        panel.repaint();
+    }
+    //Increase the x vaule method
+    public void moveRight(){
+        x += 50;
+        panel.repaint();
+    }
+    //Increase the x vaule method
+    public void moveLeft(){
+        x -= 50;
+        panel.repaint();
     }
 
 }

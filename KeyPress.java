@@ -17,11 +17,11 @@ public class KeyPress implements KeyListener {
     @Override
     public void keyPressed(KeyEvent e) {
         if (e.getKeyCode() == KeyEvent.VK_W) {
-            //player.moveUp();
+            player.moveUp();
         } else if (e.getKeyCode() == KeyEvent.VK_A) {
-            //player.moveLeft();
+            player.moveLeft();
         } else if (e.getKeyCode() == KeyEvent.VK_D) {
-            //player.moveRight();
+            player.moveRight();
         }
     }
 

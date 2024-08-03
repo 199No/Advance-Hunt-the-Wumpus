@@ -20,6 +20,8 @@ public class main {
         // Create the Panel
         Panel panel = new Panel(bob);
         
+        bob.setPanel(panel);
+
         // Add the Panel to the Gui frame
         gui.add(panel);
         
@@ -27,4 +29,8 @@ public class main {
         panel.setPlayerPosition(0, 0);
     }
 }
+
+
+
+
 
