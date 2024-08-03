@@ -3,6 +3,7 @@ class Player{
     private String name;
     private int x;
     private int y;
+    private String state = "Idle";
 
     public Player(String nameGiven){
 
@@ -21,11 +22,18 @@ class Player{
         x = xGiven;
         y = yGiven;
 
+        
+
     }
 
     //Method sets One value (x)
     public void setXVaule(int xGiven){
         x = xGiven;
+    }
+
+    //Method sets State
+    public void setState(String stateGiven){
+        state = stateGiven;
     }
 
     //Method sets One value (y)
@@ -45,6 +53,11 @@ class Player{
     //Method Returns x
     public int getX(){
         return x;
+    }
+
+    //Method Returns State
+    public String getState(){
+        return state;
     }
 
     //Method Returns y

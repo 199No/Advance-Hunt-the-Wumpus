@@ -13,13 +13,12 @@ public class main {
         System.out.println("Ran Main without Errors");
 
         Player bob = new Player("Bob");
-        System.out.println(bob.getName());
 
         // Create the Gui frame
         Gui gui = new Gui();
 
         // Create the Panel
-        Panel panel = new Panel();
+        Panel panel = new Panel(bob);
         
         // Add the Panel to the Gui frame
         gui.add(panel);
