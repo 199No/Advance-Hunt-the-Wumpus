@@ -14,12 +14,12 @@ public class main {
 
         Player bob = new Player("Bob");
 
-        // Create the Gui frame
-        Gui gui = new Gui();
-
         // Create the Panel
         Panel panel = new Panel(bob);
         
+        // Create the Gui frame
+        Gui gui = new Gui(panel);
+
         bob.setPanel(panel);
 
         // Add the Panel to the Gui frame

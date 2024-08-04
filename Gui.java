@@ -5,7 +5,7 @@ public class Gui extends JFrame {
     private Player player;
     private KeyPress keyPresser;
 
-    public Gui() {
+    public Gui(Panel panel) {
         setTitle("Menu");
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         setSize(750, 750);
@@ -13,7 +13,7 @@ public class Gui extends JFrame {
         setLocationRelativeTo(null);
 
         player = new Player();
-        keyPresser = new KeyPress(player);
+        keyPresser = new KeyPress(player, panel);
         addKeyListener(keyPresser);
         setFocusable(true);
         setFocusTraversalKeysEnabled(false);
@@ -21,7 +21,5 @@ public class Gui extends JFrame {
         setVisible(true);
     }
 
-    public static void main(String[] args) {
-        Gui gui = new Gui();
-    }
+
 }

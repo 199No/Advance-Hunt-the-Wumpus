@@ -5,8 +5,9 @@ public class KeyPress implements KeyListener {
 
     private Player player;
 
-    public KeyPress(Player player) {
+    public KeyPress(Player player, Panel panel) {
         this.player = player;
+        this.player.setPanel(panel);
     }
 
     @Override
