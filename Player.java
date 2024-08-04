@@ -3,7 +3,14 @@ class Player{
     private String name;
     private int x;
     private int y;
-    private String state = "Idle";
+    private String state = "Jumping";
+
+    //Possible States
+    // Idle
+    // Walking
+    // Running
+    //Jumping
+
 
     public Player(String nameGiven){
 
@@ -98,17 +105,17 @@ class Player{
     //Increase the y vaule method
     public void moveUp(){
         y -= 50;
-        panel.repaint();
+        panel.setPlayerPosition(x,y);
     }
     //Increase the x vaule method
     public void moveRight(){
         x += 50;
-        panel.repaint();
+        panel.setPlayerPosition(x,y);
     }
     //Increase the x vaule method
     public void moveLeft(){
         x -= 50;
-        panel.repaint();
+        panel.setPlayerPosition(x,y);
     }
 
 }

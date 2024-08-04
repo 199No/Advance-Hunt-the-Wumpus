@@ -10,7 +10,7 @@ public class main {
 
     public static void main(String[] args){
 
-        System.out.println("Ran Main without Errors");
+        
 
         Player bob = new Player("Bob");
 
@@ -26,7 +26,7 @@ public class main {
         gui.add(panel);
         
         // Set the player position to display the coin
-        panel.setPlayerPosition(0, 0);
+        System.out.println("Ran Main without Errors");
     }
 }
 
