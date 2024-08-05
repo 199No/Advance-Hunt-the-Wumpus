@@ -10,8 +10,9 @@ class Player{
     //# Walking
     //# Running
     //# Jumping
-    //# Death
-    //# Hurt
+    //# Death $
+    //# Hurt  $
+    //# Attack
 
 
     public Player(String nameGiven){
@@ -110,20 +111,33 @@ class Player{
         //Jumping is disabled for now
     }
     //Increase the x vaule method
-    public void moveRight(){
+    public void moveRightWalk(){
         panel.playerStatePanel("Walking");
-        panel.moveBackgroundRight();
+        panel.moveBackgroundRightWalk();
         
     }
     //Increase the x vaule method
-    public void moveLeft(){
+    public void moveLeftWalk(){
         panel.playerStatePanel("Walking");
-        panel.moveBackgroundLeft();
+        panel.moveBackgroundLeftWalk();
         
     }
     public void attack(){
         panel.playerStatePanel("Attack");
 
     }
+
+        //Increase the x vaule method
+        public void moveRightRun(){
+            panel.playerStatePanel("Running");
+            panel.moveBackgroundRightRun();
+            
+        }
+        //Increase the x vaule method
+        public void moveLeftRun(){
+            panel.playerStatePanel("Running");
+            panel.moveBackgroundLeftRun();
+            
+        }
 
 }

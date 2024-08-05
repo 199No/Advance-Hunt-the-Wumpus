@@ -9,6 +9,7 @@ public class KeyPress implements KeyListener {
     private boolean isAPressed = false;
     private boolean isDPressed = false;
     private boolean isSpacePressed = false;
+    private boolean isShiftPressed = false;
 
     public KeyPress(Player player, Panel panel) {
         this.player = player;
@@ -24,21 +25,29 @@ public class KeyPress implements KeyListener {
     public void keyPressed(KeyEvent e) {
         int keyCode = e.getKeyCode();
         
-        if (keyCode == KeyEvent.VK_W && !isAPressed) {
+        if (keyCode == KeyEvent.VK_W && !isWPressed) {
             isWPressed = true;
             player.moveUp();
         } else if (keyCode == KeyEvent.VK_A) {
             isAPressed = true;
-            player.moveLeft();
-        } else if (keyCode == KeyEvent.VK_D ) {
+            if (isShiftPressed) {
+                player.moveLeftRun();
+            } else {
+                player.moveLeftWalk();
+            }
+        } else if (keyCode == KeyEvent.VK_D) {
             isDPressed = true;
-            player.moveRight();
-        }
-        else if (keyCode == KeyEvent.VK_SPACE){
+            if (isShiftPressed) {
+                player.moveRightRun();
+            } else {
+                player.moveRightWalk();
+            }
+        } else if (keyCode == KeyEvent.VK_SPACE) {
             isSpacePressed = true;
             player.attack();
+        } else if (keyCode == KeyEvent.VK_SHIFT) {
+            isShiftPressed = true;
         }
-        
     }
 
     @Override
@@ -53,6 +62,9 @@ public class KeyPress implements KeyListener {
             isDPressed = false;    }
         else if (keyCode == KeyEvent.VK_SPACE){
             isSpacePressed = false;
+        }
+        else if (keyCode == KeyEvent.VK_SHIFT){
+            isShiftPressed = false;
         }
     } 
 }

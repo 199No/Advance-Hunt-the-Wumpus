@@ -16,6 +16,8 @@ public class Panel extends JPanel {
     private int JumpingFrameCounter = 1;
     private int DeathFrameCounter = 1;
     private int HurtFrameCounter = 1;
+    private int AttackFrameCounter = 1;
+
 
     //Background postion ints
     private int Background1_Xint = 0;
@@ -26,6 +28,9 @@ public class Panel extends JPanel {
     private int Background6_Xint = 2880;
     private int Background7_Xint = 3456;
     private int Background8_Xint = 4032;
+
+    //Extra IMages int
+    private int coin1X = 100;
 
 
 
@@ -39,7 +44,7 @@ public class Panel extends JPanel {
     private Image Background7;
     private Image Background8;
 
-    private Image coin;
+    private Image coin1;
 
     private Image Player_Idle_1;
     private Image Player_Idle_2;
@@ -78,6 +83,13 @@ public class Panel extends JPanel {
     private Image Player_Hurt_2;
     private Image Player_Hurt_3;
 
+    private Image Player_Attack_1;
+    private Image Player_Attack_2;
+    private Image Player_Attack_3;
+    private Image Player_Attack_4;
+    private Image Player_Attack_5;
+    private Image Player_Attack_6;
+
 
 
     public Panel(Player playerPlayer) {
@@ -99,7 +111,7 @@ public class Panel extends JPanel {
 
 
         //Misc Images
-        coin = Toolkit.getDefaultToolkit().getImage("Objects\\Coin.gif").getScaledInstance(75, 75, Image.SCALE_DEFAULT);
+        coin1 = Toolkit.getDefaultToolkit().getImage("Objects\\Coin1.gif").getScaledInstance(75, 75, Image.SCALE_DEFAULT);
 
         //Player Images 
         Player_Idle_1 = Toolkit.getDefaultToolkit().getImage("Player_Idle\\Player_Idle_1.png").getScaledInstance(72, 97, Image.SCALE_DEFAULT);
@@ -139,11 +151,17 @@ public class Panel extends JPanel {
         Player_Hurt_2 = Toolkit.getDefaultToolkit().getImage("Player_Hurt\\Player_Hurt_2.png").getScaledInstance(72, 97,  Image.SCALE_DEFAULT);
         Player_Hurt_3 = Toolkit.getDefaultToolkit().getImage("Player_Hurt\\Player_Hurt_3.png").getScaledInstance(72, 97,  Image.SCALE_DEFAULT);
 
+        Player_Attack_1 = Toolkit.getDefaultToolkit().getImage("Player_Attack\\Player_Attack_1.png").getScaledInstance(72, 97,  Image.SCALE_DEFAULT);
+        Player_Attack_2 = Toolkit.getDefaultToolkit().getImage("Player_Attack\\Player_Attack_2.png").getScaledInstance(72, 97,  Image.SCALE_DEFAULT);
+        Player_Attack_3 = Toolkit.getDefaultToolkit().getImage("Player_Attack\\Player_Attack_3.png").getScaledInstance(72, 97,  Image.SCALE_DEFAULT);
+        Player_Attack_4 = Toolkit.getDefaultToolkit().getImage("Player_Attack\\Player_Attack_4.png").getScaledInstance(72, 97,  Image.SCALE_DEFAULT);
+        Player_Attack_5 = Toolkit.getDefaultToolkit().getImage("Player_Attack\\Player_Attack_5.png").getScaledInstance(72, 97,  Image.SCALE_DEFAULT);
+        Player_Attack_6 = Toolkit.getDefaultToolkit().getImage("Player_Attack\\Player_Attack_6.png").getScaledInstance(72, 97,  Image.SCALE_DEFAULT);
 
     }
 
 
-    public void moveBackgroundRight(){
+    public void moveBackgroundRightWalk(){
         Background1_Xint -= 5;
         Background2_Xint -= 5;
         Background3_Xint -= 5;
@@ -152,8 +170,10 @@ public class Panel extends JPanel {
         Background6_Xint -= 5;
         Background7_Xint -= 5;
         Background8_Xint -= 5;
+
+        coin1X -= 5;
     }
-    public void moveBackgroundLeft(){
+    public void moveBackgroundLeftWalk(){
         Background1_Xint += 5;
         Background2_Xint += 5;
         Background3_Xint += 5;
@@ -163,7 +183,39 @@ public class Panel extends JPanel {
         Background7_Xint += 5;
         Background8_Xint += 5;
 
+        coin1X += 5;
+
+
     }
+
+    public void moveBackgroundRightRun(){
+        Background1_Xint -= 10;
+        Background2_Xint -= 10;
+        Background3_Xint -= 10;
+        Background4_Xint -= 10;
+        Background5_Xint -= 10;
+        Background6_Xint -= 10;
+        Background7_Xint -= 10;
+        Background8_Xint -= 10;
+        coin1X -= 10;
+
+    }
+    public void moveBackgroundLeftRun(){
+        Background1_Xint += 10;
+        Background2_Xint += 10;
+        Background3_Xint += 10;
+        Background4_Xint += 10;
+        Background5_Xint += 10;
+        Background6_Xint += 10;
+        Background7_Xint += 10;
+        Background8_Xint += 10;
+
+        coin1X += 10;
+
+
+    }
+    
+    
     public void playerStatePanel(String givenState){
         tempPlayer.setState(givenState);
     }
@@ -185,7 +237,7 @@ public class Panel extends JPanel {
 
 
         //Drawing A ref Image
-        g.drawImage(coin, 100, 25, this);
+        g.drawImage(coin1, coin1X, 25, this);
 
         // Idle Animations
         if(tempPlayer.getState() == "Idle"){
@@ -342,6 +394,35 @@ public class Panel extends JPanel {
                 tempPlayer.setState("Idle");
             }
 
+        }
+        if(tempPlayer.getState() == "Attack"){
+            
+            //Depending on Frame Counter
+            if(AttackFrameCounter == 1){
+                g.drawImage(Player_Attack_1, tempPlayer.getX(), tempPlayer.getY(), this);
+                AttackFrameCounter = 2;
+            }
+            else if(AttackFrameCounter == 2){
+                g.drawImage(Player_Attack_2, tempPlayer.getX(), tempPlayer.getY(), this);
+                AttackFrameCounter = 3;
+            }
+            else if(AttackFrameCounter == 3){
+                g.drawImage(Player_Attack_3, tempPlayer.getX(), tempPlayer.getY(), this);
+                AttackFrameCounter = 4;
+            }
+            else if(AttackFrameCounter == 4){
+                g.drawImage(Player_Attack_4, tempPlayer.getX(), tempPlayer.getY(), this);
+                AttackFrameCounter = 5;
+            }
+            else if(AttackFrameCounter == 5){
+                g.drawImage(Player_Attack_5, tempPlayer.getX(), tempPlayer.getY(), this);
+                AttackFrameCounter = 6;
+            }
+            else if(AttackFrameCounter == 6){
+                g.drawImage(Player_Attack_6, tempPlayer.getX(), tempPlayer.getY(), this);
+                AttackFrameCounter = 1;
+                tempPlayer.setState("Idle");
+            }
         }
 
     }
