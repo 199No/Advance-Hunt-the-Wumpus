@@ -121,5 +121,9 @@ class Player{
         panel.moveBackgroundLeft();
         
     }
+    public void attack(){
+        panel.playerStatePanel("Attack");
+
+    }
 
 }

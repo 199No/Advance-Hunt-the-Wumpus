@@ -8,6 +8,7 @@ public class KeyPress implements KeyListener {
     private boolean isWPressed = false;
     private boolean isAPressed = false;
     private boolean isDPressed = false;
+    private boolean isSpacePressed = false;
 
     public KeyPress(Player player, Panel panel) {
         this.player = player;
@@ -26,7 +27,6 @@ public class KeyPress implements KeyListener {
         if (keyCode == KeyEvent.VK_W && !isAPressed) {
             isWPressed = true;
             player.moveUp();
-            System.out.println("MuckBang");
         } else if (keyCode == KeyEvent.VK_A) {
             isAPressed = true;
             player.moveLeft();
@@ -34,6 +34,11 @@ public class KeyPress implements KeyListener {
             isDPressed = true;
             player.moveRight();
         }
+        else if (keyCode == KeyEvent.VK_SPACE){
+            isSpacePressed = true;
+            player.attack();
+        }
+        
     }
 
     @Override
@@ -46,5 +51,8 @@ public class KeyPress implements KeyListener {
             isAPressed = false;
         } else if (keyCode == KeyEvent.VK_D) {
             isDPressed = false;    }
+        else if (keyCode == KeyEvent.VK_SPACE){
+            isSpacePressed = false;
         }
+    } 
 }
