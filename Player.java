@@ -1,14 +1,14 @@
 class Player{
     private Panel panel;
     private String name;
-    private int x = 0;
-    private int y = 0;
+    private int x = 218;
+    private int y = 198;
     private String state = "Idle";
 
     //Possible States
     //# Idle
     //# Walking
-    // Running
+    //# Running
     //# Jumping
     //# Death
     //# Hurt
@@ -112,15 +112,12 @@ class Player{
     }
     //Increase the x vaule method
     public void moveRight(){
-        x += 50;
+        panel.moveBackgroundRight();
         state = "Walking";
-        panel.setPlayerPosition(x,y);
     }
     //Increase the x vaule method
     public void moveLeft(){
-        x -= 50;
         state = "Walking";
-        panel.setPlayerPosition(x,y);
     }
 
 }

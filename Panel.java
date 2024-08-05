@@ -8,6 +8,8 @@ public class Panel extends JPanel {
     private int playerX = 0;
     private int playerY = 0;
     public Player tempPlayer;
+
+    //Frame Counters
     private int IdleFrameCounter = 1;
     private int WalkingFrameCounter = 1;
     private int RunningFrameCounter = 1;
@@ -15,11 +17,28 @@ public class Panel extends JPanel {
     private int DeathFrameCounter = 1;
     private int HurtFrameCounter = 1;
 
+    //Background postion ints
+    private int Background1_Xint = 0;
+    private int Background2_Xint = 576;
+    private int Background3_Xint = 1152;
+    private int Background4_Xint = 1728;
+    private int Background5_Xint = 2304;
+    private int Background6_Xint = 2880;
+    private int Background7_Xint = 3456;
+    private int Background8_Xint = 4032;
 
 
 
     //Images
     private Image Background1;
+    private Image Background2;
+    private Image Background3;
+    private Image Background4;
+    private Image Background5;
+    private Image Background6;
+    private Image Background7;
+    private Image Background8;
+
     private Image coin;
 
     private Image Player_Idle_1;
@@ -70,10 +89,17 @@ public class Panel extends JPanel {
 
         //Background Images     
         Background1 = Toolkit.getDefaultToolkit().getImage("Background\\Background1.png").getScaledInstance(576, 324, Image.SCALE_DEFAULT);
+        Background2 = Toolkit.getDefaultToolkit().getImage("Background\\Background2.png").getScaledInstance(576, 324, Image.SCALE_DEFAULT);
+        Background3 = Toolkit.getDefaultToolkit().getImage("Background\\Background3.png").getScaledInstance(576, 324, Image.SCALE_DEFAULT);
+        Background4 = Toolkit.getDefaultToolkit().getImage("Background\\Background4.png").getScaledInstance(576, 324, Image.SCALE_DEFAULT);
+        Background5 = Toolkit.getDefaultToolkit().getImage("Background\\Background5.png").getScaledInstance(576, 324, Image.SCALE_DEFAULT);
+        Background6 = Toolkit.getDefaultToolkit().getImage("Background\\Background6.png").getScaledInstance(576, 324, Image.SCALE_DEFAULT);
+        Background7 = Toolkit.getDefaultToolkit().getImage("Background\\Background7.png").getScaledInstance(576, 324, Image.SCALE_DEFAULT);
+        Background8 = Toolkit.getDefaultToolkit().getImage("Background\\Background8.png").getScaledInstance(576, 324, Image.SCALE_DEFAULT);
 
 
         //Misc Images
-        coin = Toolkit.getDefaultToolkit().getImage("Objects\\Coin.gif").getScaledInstance(100, 100, Image.SCALE_DEFAULT);
+        coin = Toolkit.getDefaultToolkit().getImage("Objects\\Coin.gif").getScaledInstance(75, 75, Image.SCALE_DEFAULT);
 
         //Player Images 
         Player_Idle_1 = Toolkit.getDefaultToolkit().getImage("Player_Idle\\Player_Idle_1.png").getScaledInstance(72, 97, Image.SCALE_DEFAULT);
@@ -122,12 +148,25 @@ public class Panel extends JPanel {
         repaint(); // Request the JPanel to repaint itself
     }
 
+    public void moveBackgroundRight(){
+
+        System.out.println("DWAD");
+
+    }
+
     @Override
     protected void paintComponent(Graphics g) {
         super.paintComponent(g);
 
         //Drawing background
-        g.drawImage(Background1, 0, 0, this);
+        g.drawImage(Background1, Background1_Xint, 0, this);
+        g.drawImage(Background2, Background2_Xint, 0, this);
+        g.drawImage(Background3, Background3_Xint, 0, this);
+        g.drawImage(Background4, Background4_Xint, 0, this);
+        g.drawImage(Background5, Background5_Xint, 0, this);
+        g.drawImage(Background6, Background6_Xint, 0, this);
+        g.drawImage(Background7, Background7_Xint, 0, this);
+        g.drawImage(Background8, Background8_Xint, 0, this);
 
 
 

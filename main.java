@@ -10,8 +10,6 @@ public class main {
 
     public static void main(String[] args){
 
-        
-
         Player bob = new Player("Bob");
 
         // Create the Panel

@@ -4,6 +4,9 @@ import java.awt.event.KeyListener;
 public class KeyPress implements KeyListener {
 
     private Player player;
+    private boolean isWPressed = false;
+    private boolean isAPressed = false;
+    private boolean isDPressed = false;
 
     public KeyPress(Player player, Panel panel) {
         this.player = player;
@@ -17,17 +20,29 @@ public class KeyPress implements KeyListener {
 
     @Override
     public void keyPressed(KeyEvent e) {
-        if (e.getKeyCode() == KeyEvent.VK_W) {
+        int keyCode = e.getKeyCode();
+        
+        if (keyCode == KeyEvent.VK_W && !isWPressed) {
+            isWPressed = true;
             player.moveUp();
-        } else if (e.getKeyCode() == KeyEvent.VK_A) {
+        } else if (keyCode == KeyEvent.VK_A && !isAPressed) {
+            isAPressed = true;
             player.moveLeft();
-        } else if (e.getKeyCode() == KeyEvent.VK_D) {
+        } else if (keyCode == KeyEvent.VK_D && !isDPressed) {
+            isDPressed = true;
             player.moveRight();
         }
     }
 
     @Override
     public void keyReleased(KeyEvent e) {
-        // We won't use this method in this program
-    }
+        int keyCode = e.getKeyCode();
+        
+        if (keyCode == KeyEvent.VK_W) {
+            isWPressed = false;
+        } else if (keyCode == KeyEvent.VK_A) {
+            isAPressed = false;
+        } else if (keyCode == KeyEvent.VK_D) {
+            isDPressed = false;    }
+        }
 }
