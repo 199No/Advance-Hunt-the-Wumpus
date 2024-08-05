@@ -13,11 +13,13 @@ public class Panel extends JPanel {
     private int RunningFrameCounter = 1;
     private int JumpingFrameCounter = 1;
     private int DeathFrameCounter = 1;
+    private int HurtFrameCounter = 1;
 
 
 
 
     //Images
+    private Image Background1;
     private Image coin;
 
     private Image Player_Idle_1;
@@ -53,6 +55,9 @@ public class Panel extends JPanel {
     private Image Player_Death_5;
     private Image Player_Death_6;
 
+    private Image Player_Hurt_1;
+    private Image Player_Hurt_2;
+    private Image Player_Hurt_3;
 
 
 
@@ -62,6 +67,10 @@ public class Panel extends JPanel {
 
         //Setting Player
         tempPlayer = playerPlayer;
+
+        //Background Images     
+        Background1 = Toolkit.getDefaultToolkit().getImage("Background\\Background1.png").getScaledInstance(576, 324, Image.SCALE_DEFAULT);
+
 
         //Misc Images
         coin = Toolkit.getDefaultToolkit().getImage("Objects\\Coin.gif").getScaledInstance(100, 100, Image.SCALE_DEFAULT);
@@ -100,6 +109,9 @@ public class Panel extends JPanel {
         Player_Death_5 = Toolkit.getDefaultToolkit().getImage("Player_Death\\Player_Death_5.png").getScaledInstance(72, 97,  Image.SCALE_DEFAULT);
         Player_Death_6 = Toolkit.getDefaultToolkit().getImage("Player_Death\\Player_Death_6.png").getScaledInstance(72, 97,  Image.SCALE_DEFAULT);
 
+        Player_Hurt_1 = Toolkit.getDefaultToolkit().getImage("Player_Hurt\\Player_Hurt_1.png").getScaledInstance(72, 97, Image.SCALE_DEFAULT);
+        Player_Hurt_2 = Toolkit.getDefaultToolkit().getImage("Player_Hurt\\Player_Hurt_2.png").getScaledInstance(72, 97,  Image.SCALE_DEFAULT);
+        Player_Hurt_3 = Toolkit.getDefaultToolkit().getImage("Player_Hurt\\Player_Hurt_3.png").getScaledInstance(72, 97,  Image.SCALE_DEFAULT);
 
 
     }
@@ -113,6 +125,9 @@ public class Panel extends JPanel {
     @Override
     protected void paintComponent(Graphics g) {
         super.paintComponent(g);
+
+        //Drawing background
+        g.drawImage(Background1, 0, 0, this);
 
 
 
@@ -252,6 +267,23 @@ public class Panel extends JPanel {
                 g.drawImage(Player_Death_6, tempPlayer.getX(), tempPlayer.getY(), this);
                 DeathFrameCounter = 1;
             }
+        }
+        if(tempPlayer.getState() == "Hurt"){
+
+            //Depending on Frame Counter
+            if(HurtFrameCounter == 1){
+                g.drawImage(Player_Hurt_1, tempPlayer.getX(), tempPlayer.getY(), this);
+                HurtFrameCounter = 2;
+            }
+            else if(HurtFrameCounter == 2){
+                g.drawImage(Player_Hurt_2, tempPlayer.getX(), tempPlayer.getY(), this);
+                HurtFrameCounter = 3;
+            }
+            else if(HurtFrameCounter == 3){
+                g.drawImage(Player_Hurt_3, tempPlayer.getX(), tempPlayer.getY(), this);
+                HurtFrameCounter = 1;
+            }
+
         }
 
     }

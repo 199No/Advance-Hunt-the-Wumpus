@@ -8,10 +8,9 @@ public class Gui extends JFrame {
     public Gui(Panel panel) {
         setTitle("Menu");
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-        setSize(750, 750);
+        setSize(576, 324);
         setResizable(false);
         setLocationRelativeTo(null);
-
         player = new Player();
         keyPresser = new KeyPress(player, panel);
         addKeyListener(keyPresser);

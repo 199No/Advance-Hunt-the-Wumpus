@@ -3,14 +3,15 @@ class Player{
     private String name;
     private int x = 0;
     private int y = 0;
-    private String state = "Death";
+    private String state = "Idle";
 
     //Possible States
-    // Idle
-    // Walking
+    //# Idle
+    //# Walking
     // Running
-    // Jumping
-    // Death
+    //# Jumping
+    //# Death
+    //# Hurt
 
 
     public Player(String nameGiven){
