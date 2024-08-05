@@ -142,16 +142,30 @@ public class Panel extends JPanel {
 
     }
 
-    public void setPlayerPosition(int x, int y) {
-        this.playerX = x;
-        this.playerY = y;
-        repaint(); // Request the JPanel to repaint itself
-    }
 
     public void moveBackgroundRight(){
+        Background1_Xint -= 5;
+        Background2_Xint -= 5;
+        Background3_Xint -= 5;
+        Background4_Xint -= 5;
+        Background5_Xint -= 5;
+        Background6_Xint -= 5;
+        Background7_Xint -= 5;
+        Background8_Xint -= 5;
+    }
+    public void moveBackgroundLeft(){
+        Background1_Xint += 5;
+        Background2_Xint += 5;
+        Background3_Xint += 5;
+        Background4_Xint += 5;
+        Background5_Xint += 5;
+        Background6_Xint += 5;
+        Background7_Xint += 5;
+        Background8_Xint += 5;
 
-        System.out.println("DWAD");
-
+    }
+    public void playerStatePanel(String givenState){
+        tempPlayer.setState(givenState);
     }
 
     @Override
@@ -221,6 +235,7 @@ public class Panel extends JPanel {
             else if(WalkingFrameCounter == 6){
                 g.drawImage(Player_Walking_6, tempPlayer.getX(), tempPlayer.getY(), this);
                 WalkingFrameCounter = 1;
+                tempPlayer.setState("Idle");
             }
         }
         if(tempPlayer.getState() == "Running"){
@@ -249,6 +264,7 @@ public class Panel extends JPanel {
             else if(RunningFrameCounter == 6){
                 g.drawImage(Player_Running_6, tempPlayer.getX(), tempPlayer.getY(), this);
                 RunningFrameCounter = 1;
+                tempPlayer.setState("Idle");
             }
         }
         if(tempPlayer.getState() == "Jumping"){
@@ -277,6 +293,7 @@ public class Panel extends JPanel {
             else if(JumpingFrameCounter == 6){
                 g.drawImage(Player_Jumping_6, tempPlayer.getX(), tempPlayer.getY(), this);
                 JumpingFrameCounter = 1;
+                tempPlayer.setState("Idle");
             }
         }
         if(tempPlayer.getState() == "Death"){
@@ -305,6 +322,7 @@ public class Panel extends JPanel {
             else if(DeathFrameCounter == 6){
                 g.drawImage(Player_Death_6, tempPlayer.getX(), tempPlayer.getY(), this);
                 DeathFrameCounter = 1;
+                tempPlayer.setState("Idle");
             }
         }
         if(tempPlayer.getState() == "Hurt"){
@@ -321,6 +339,7 @@ public class Panel extends JPanel {
             else if(HurtFrameCounter == 3){
                 g.drawImage(Player_Hurt_3, tempPlayer.getX(), tempPlayer.getY(), this);
                 HurtFrameCounter = 1;
+                tempPlayer.setState("Idle");
             }
 
         }

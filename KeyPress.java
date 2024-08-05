@@ -1,3 +1,4 @@
+import java.awt.event.ActionListener;
 import java.awt.event.KeyEvent;
 import java.awt.event.KeyListener;
 
@@ -22,13 +23,14 @@ public class KeyPress implements KeyListener {
     public void keyPressed(KeyEvent e) {
         int keyCode = e.getKeyCode();
         
-        if (keyCode == KeyEvent.VK_W && !isWPressed) {
+        if (keyCode == KeyEvent.VK_W && !isAPressed) {
             isWPressed = true;
             player.moveUp();
-        } else if (keyCode == KeyEvent.VK_A && !isAPressed) {
+            System.out.println("MuckBang");
+        } else if (keyCode == KeyEvent.VK_A) {
             isAPressed = true;
             player.moveLeft();
-        } else if (keyCode == KeyEvent.VK_D && !isDPressed) {
+        } else if (keyCode == KeyEvent.VK_D ) {
             isDPressed = true;
             player.moveRight();
         }
@@ -37,7 +39,7 @@ public class KeyPress implements KeyListener {
     @Override
     public void keyReleased(KeyEvent e) {
         int keyCode = e.getKeyCode();
-        
+
         if (keyCode == KeyEvent.VK_W) {
             isWPressed = false;
         } else if (keyCode == KeyEvent.VK_A) {

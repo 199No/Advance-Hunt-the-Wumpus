@@ -106,18 +106,20 @@ class Player{
 
     //Increase the y vaule method
     public void moveUp(){
-        y -= 50;
-        state = "Jumping";
-        panel.setPlayerPosition(x,y);
+        panel.playerStatePanel("Jumping");
+        //Jumping is disabled for now
     }
     //Increase the x vaule method
     public void moveRight(){
+        panel.playerStatePanel("Walking");
         panel.moveBackgroundRight();
-        state = "Walking";
+        
     }
     //Increase the x vaule method
     public void moveLeft(){
-        state = "Walking";
+        panel.playerStatePanel("Walking");
+        panel.moveBackgroundLeft();
+        
     }
 
 }
