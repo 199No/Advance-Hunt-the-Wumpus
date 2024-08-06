@@ -1,5 +1,6 @@
 class Player{
     private Panel panel;
+    private String direction = "Right";
     private String name;
     private int x = 218;
     private int y = 198;
@@ -72,10 +73,18 @@ class Player{
         name = nameGiven;
     }
 
+    public void setDirection(String givenDirection){
+        direction = givenDirection;
+    }
+
     //////////////////////
     // Getters
     //////////////////////
 
+    public String getDirection(){
+        return direction;
+    }
+    
     //Method Returns x
     public int getX(){
         return x;

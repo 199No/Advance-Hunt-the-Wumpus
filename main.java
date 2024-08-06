@@ -26,6 +26,7 @@ public class main {
         // Set the player position to display the coin
         System.out.println("Ran Main without Errors");
     }
+    
 }
 
 

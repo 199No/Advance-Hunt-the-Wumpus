@@ -10,10 +10,12 @@ public class KeyPress implements KeyListener {
     private boolean isDPressed = false;
     private boolean isSpacePressed = false;
     private boolean isShiftPressed = false;
+    private Panel panel;
 
-    public KeyPress(Player player, Panel panel) {
+    public KeyPress(Player player, Panel panelGiven) {
         this.player = player;
-        this.player.setPanel(panel);
+        this.player.setPanel(panelGiven);
+        panel = panelGiven;
     }
 
     @Override
@@ -29,6 +31,7 @@ public class KeyPress implements KeyListener {
             isWPressed = true;
             player.moveUp();
         } else if (keyCode == KeyEvent.VK_A) {
+            panel.setDirectionPanel("Left");
             isAPressed = true;
             if (isShiftPressed) {
                 player.moveLeftRun();
@@ -36,6 +39,7 @@ public class KeyPress implements KeyListener {
                 player.moveLeftWalk();
             }
         } else if (keyCode == KeyEvent.VK_D) {
+            panel.setDirectionPanel("Right");
             isDPressed = true;
             if (isShiftPressed) {
                 player.moveRightRun();
