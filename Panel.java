@@ -34,8 +34,9 @@ public class Panel extends JPanel {
     private int coin1X = 100;
 
 
-
-    //Images
+    ////////////////////////
+    //   Images
+    ////////////////////////
     private Image Background1;
     private Image Background2;
     private Image Background3;
@@ -47,11 +48,22 @@ public class Panel extends JPanel {
 
     private Image coin1;
 
+    ////////////////////////
+    //   Player Images
+    ////////////////////////
+
+    //Idle
     private Image Player_Idle_1R;
     private Image Player_Idle_2R;
     private Image Player_Idle_3R;
     private Image Player_Idle_4R;
 
+    private Image Player_Idle_1L;
+    private Image Player_Idle_2L;
+    private Image Player_Idle_3L;
+    private Image Player_Idle_4L;
+
+    //Walking
     private Image Player_Walking_1R;
     private Image Player_Walking_2R;
     private Image Player_Walking_3R;
@@ -59,6 +71,14 @@ public class Panel extends JPanel {
     private Image Player_Walking_5R;
     private Image Player_Walking_6R;
 
+    private Image Player_Walking_1L;
+    private Image Player_Walking_2L;
+    private Image Player_Walking_3L;
+    private Image Player_Walking_4L;
+    private Image Player_Walking_5L;
+    private Image Player_Walking_6L;
+
+    //RUnning
     private Image Player_Running_1R;
     private Image Player_Running_2R;
     private Image Player_Running_3R;
@@ -66,6 +86,14 @@ public class Panel extends JPanel {
     private Image Player_Running_5R;
     private Image Player_Running_6R;
 
+    private Image Player_Running_1L;
+    private Image Player_Running_2L;
+    private Image Player_Running_3L;
+    private Image Player_Running_4L;
+    private Image Player_Running_5L;
+    private Image Player_Running_6L;
+
+    //Jumping
     private Image Player_Jumping_1R;
     private Image Player_Jumping_2R;
     private Image Player_Jumping_3R;
@@ -73,6 +101,14 @@ public class Panel extends JPanel {
     private Image Player_Jumping_5R;
     private Image Player_Jumping_6R;
 
+    private Image Player_Jumping_1L;
+    private Image Player_Jumping_2L;
+    private Image Player_Jumping_3L;
+    private Image Player_Jumping_4L;
+    private Image Player_Jumping_5L;
+    private Image Player_Jumping_6L;
+
+    //Death
     private Image Player_Death_1R;
     private Image Player_Death_2R;
     private Image Player_Death_3R;
@@ -80,16 +116,37 @@ public class Panel extends JPanel {
     private Image Player_Death_5R;
     private Image Player_Death_6R;
 
+    private Image Player_Death_1L;
+    private Image Player_Death_2L;
+    private Image Player_Death_3L;
+    private Image Player_Death_4L;
+    private Image Player_Death_5L;
+    private Image Player_Death_6L;
+
+    //Hurt
     private Image Player_Hurt_1R;
     private Image Player_Hurt_2R;
     private Image Player_Hurt_3R;
 
+    private Image Player_Hurt_1L;
+    private Image Player_Hurt_2L;
+    private Image Player_Hurt_3L;
+
+    //Attack
     private Image Player_Attack_1R;
     private Image Player_Attack_2R;
     private Image Player_Attack_3R;
     private Image Player_Attack_4R;
     private Image Player_Attack_5R;
     private Image Player_Attack_6R;
+
+    private Image Player_Attack_1L;
+    private Image Player_Attack_2L;
+    private Image Player_Attack_3L;
+    private Image Player_Attack_4L;
+    private Image Player_Attack_5L;
+    private Image Player_Attack_6L;
+
 
 
 
@@ -114,12 +171,23 @@ public class Panel extends JPanel {
         //Misc Images
         coin1 = Toolkit.getDefaultToolkit().getImage("Objects\\Coin1.gif").getScaledInstance(75, 75, Image.SCALE_DEFAULT);
 
+        /////////////////////
         //Player Images 
+        /////////////////////
+
+        //Idle
         Player_Idle_1R = Toolkit.getDefaultToolkit().getImage("Player_Idle\\Right\\Player_Idle_1R.png").getScaledInstance(72, 97, Image.SCALE_DEFAULT);
         Player_Idle_2R = Toolkit.getDefaultToolkit().getImage("Player_Idle\\Right\\Player_Idle_2R.png").getScaledInstance(72, 97,  Image.SCALE_DEFAULT);
         Player_Idle_3R = Toolkit.getDefaultToolkit().getImage("Player_Idle\\Right\\Player_Idle_3R.png").getScaledInstance(72, 97,  Image.SCALE_DEFAULT);
         Player_Idle_4R = Toolkit.getDefaultToolkit().getImage("Player_Idle\\Right\\Player_Idle_4R.png").getScaledInstance(72, 97,  Image.SCALE_DEFAULT);
         
+        Player_Idle_1L = Toolkit.getDefaultToolkit().getImage("Player_Idle\\Left\\Player_Idle_1L.png").getScaledInstance(72, 97, Image.SCALE_DEFAULT);
+        Player_Idle_2L = Toolkit.getDefaultToolkit().getImage("Player_Idle\\Left\\Player_Idle_2L.png").getScaledInstance(72, 97, Image.SCALE_DEFAULT);
+        Player_Idle_3L = Toolkit.getDefaultToolkit().getImage("Player_Idle\\Left\\Player_Idle_3L.png").getScaledInstance(72, 97, Image.SCALE_DEFAULT);
+        Player_Idle_4L = Toolkit.getDefaultToolkit().getImage("Player_Idle\\Left\\Player_Idle_4L.png").getScaledInstance(72, 97, Image.SCALE_DEFAULT);
+
+        
+        //Walking
         Player_Walking_1R = Toolkit.getDefaultToolkit().getImage("Player_Walking\\Right\\Player_Walking_1R.png").getScaledInstance(72, 97,  Image.SCALE_DEFAULT);
         Player_Walking_2R = Toolkit.getDefaultToolkit().getImage("Player_Walking\\Right\\Player_Walking_2R.png").getScaledInstance(72, 97,  Image.SCALE_DEFAULT);
         Player_Walking_3R = Toolkit.getDefaultToolkit().getImage("Player_Walking\\Right\\Player_Walking_3R.png").getScaledInstance(72, 97,  Image.SCALE_DEFAULT);
@@ -127,6 +195,15 @@ public class Panel extends JPanel {
         Player_Walking_5R = Toolkit.getDefaultToolkit().getImage("Player_Walking\\Right\\Player_Walking_5R.png").getScaledInstance(72, 97,  Image.SCALE_DEFAULT);
         Player_Walking_6R = Toolkit.getDefaultToolkit().getImage("Player_Walking\\Right\\Player_Walking_6R.png").getScaledInstance(72, 97,  Image.SCALE_DEFAULT);
 
+        Player_Walking_1L = Toolkit.getDefaultToolkit().getImage("Player_Walking\\Left\\Player_Walking_1L.png").getScaledInstance(72, 97,  Image.SCALE_DEFAULT);
+        Player_Walking_2L = Toolkit.getDefaultToolkit().getImage("Player_Walking\\Left\\Player_Walking_2L.png").getScaledInstance(72, 97,  Image.SCALE_DEFAULT);
+        Player_Walking_3L = Toolkit.getDefaultToolkit().getImage("Player_Walking\\Left\\Player_Walking_3L.png").getScaledInstance(72, 97,  Image.SCALE_DEFAULT);
+        Player_Walking_4L = Toolkit.getDefaultToolkit().getImage("Player_Walking\\Left\\Player_Walking_4L.png").getScaledInstance(72, 97,  Image.SCALE_DEFAULT);
+        Player_Walking_5L = Toolkit.getDefaultToolkit().getImage("Player_Walking\\Left\\Player_Walking_5L.png").getScaledInstance(72, 97,  Image.SCALE_DEFAULT);
+        Player_Walking_6L = Toolkit.getDefaultToolkit().getImage("Player_Walking\\Left\\Player_Walking_6L.png").getScaledInstance(72, 97,  Image.SCALE_DEFAULT);
+
+
+        //Running
         Player_Running_1R = Toolkit.getDefaultToolkit().getImage("Player_Running\\Right\\Player_Running_1R.png").getScaledInstance(72, 97,  Image.SCALE_DEFAULT);
         Player_Running_2R = Toolkit.getDefaultToolkit().getImage("Player_Running\\Right\\Player_Running_2R.png").getScaledInstance(72, 97,  Image.SCALE_DEFAULT);
         Player_Running_3R = Toolkit.getDefaultToolkit().getImage("Player_Running\\Right\\Player_Running_3R.png").getScaledInstance(72, 97,  Image.SCALE_DEFAULT);
@@ -134,6 +211,15 @@ public class Panel extends JPanel {
         Player_Running_5R = Toolkit.getDefaultToolkit().getImage("Player_Running\\Right\\Player_Running_5R.png").getScaledInstance(72, 97,  Image.SCALE_DEFAULT);
         Player_Running_6R = Toolkit.getDefaultToolkit().getImage("Player_Running\\Right\\Player_Running_6R.png").getScaledInstance(72, 97,  Image.SCALE_DEFAULT);
 
+        Player_Running_1L = Toolkit.getDefaultToolkit().getImage("Player_Running\\Left\\Player_Running_1L.png").getScaledInstance(72, 97,  Image.SCALE_DEFAULT);
+        Player_Running_2L = Toolkit.getDefaultToolkit().getImage("Player_Running\\Left\\Player_Running_2L.png").getScaledInstance(72, 97,  Image.SCALE_DEFAULT);
+        Player_Running_3L = Toolkit.getDefaultToolkit().getImage("Player_Running\\Left\\Player_Running_3L.png").getScaledInstance(72, 97,  Image.SCALE_DEFAULT);
+        Player_Running_4L = Toolkit.getDefaultToolkit().getImage("Player_Running\\Left\\Player_Running_4L.png").getScaledInstance(72, 97,  Image.SCALE_DEFAULT);
+        Player_Running_5L = Toolkit.getDefaultToolkit().getImage("Player_Running\\Left\\Player_Running_5L.png").getScaledInstance(72, 97,  Image.SCALE_DEFAULT);
+        Player_Running_6L = Toolkit.getDefaultToolkit().getImage("Player_Running\\Left\\Player_Running_6L.png").getScaledInstance(72, 97,  Image.SCALE_DEFAULT);
+
+
+        //Jumping
         Player_Jumping_1R = Toolkit.getDefaultToolkit().getImage("Player_Jumping\\Right\\Player_Jump_1R.png").getScaledInstance(72, 97,  Image.SCALE_DEFAULT);
         Player_Jumping_2R = Toolkit.getDefaultToolkit().getImage("Player_Jumping\\Right\\Player_Jump_2R.png").getScaledInstance(72, 97,  Image.SCALE_DEFAULT);
         Player_Jumping_3R = Toolkit.getDefaultToolkit().getImage("Player_Jumping\\Right\\Player_Jump_3R.png").getScaledInstance(72, 97,  Image.SCALE_DEFAULT);
@@ -141,6 +227,15 @@ public class Panel extends JPanel {
         Player_Jumping_5R = Toolkit.getDefaultToolkit().getImage("Player_Jumping\\Right\\Player_Jump_5R.png").getScaledInstance(72, 97,  Image.SCALE_DEFAULT);
         Player_Jumping_6R = Toolkit.getDefaultToolkit().getImage("Player_Jumping\\Right\\Player_Jump_6R.png").getScaledInstance(72, 97,  Image.SCALE_DEFAULT);
 
+        Player_Jumping_1L = Toolkit.getDefaultToolkit().getImage("Player_Jumping\\Left\\Player_Jump_1L.png").getScaledInstance(72, 97,  Image.SCALE_DEFAULT);
+        Player_Jumping_2L = Toolkit.getDefaultToolkit().getImage("Player_Jumping\\Left\\Player_Jump_2L.png").getScaledInstance(72, 97,  Image.SCALE_DEFAULT);
+        Player_Jumping_3L = Toolkit.getDefaultToolkit().getImage("Player_Jumping\\Left\\Player_Jump_3L.png").getScaledInstance(72, 97,  Image.SCALE_DEFAULT);
+        Player_Jumping_4L = Toolkit.getDefaultToolkit().getImage("Player_Jumping\\Left\\Player_Jump_4L.png").getScaledInstance(72, 97,  Image.SCALE_DEFAULT);
+        Player_Jumping_5L = Toolkit.getDefaultToolkit().getImage("Player_Jumping\\Left\\Player_Jump_5L.png").getScaledInstance(72, 97,  Image.SCALE_DEFAULT);
+        Player_Jumping_6L = Toolkit.getDefaultToolkit().getImage("Player_Jumping\\Left\\Player_Jump_6L.png").getScaledInstance(72, 97,  Image.SCALE_DEFAULT);
+
+
+        //Death
         Player_Death_1R = Toolkit.getDefaultToolkit().getImage("Player_Death\\Right\\Player_Death_1R.png").getScaledInstance(72, 97,  Image.SCALE_DEFAULT);
         Player_Death_2R = Toolkit.getDefaultToolkit().getImage("Player_Death\\Right\\Player_Death_2R.png").getScaledInstance(72, 97,  Image.SCALE_DEFAULT);
         Player_Death_3R = Toolkit.getDefaultToolkit().getImage("Player_Death\\Right\\Player_Death_3R.png").getScaledInstance(72, 97,  Image.SCALE_DEFAULT);
@@ -148,16 +243,39 @@ public class Panel extends JPanel {
         Player_Death_5R = Toolkit.getDefaultToolkit().getImage("Player_Death\\Right\\Player_Death_5R.png").getScaledInstance(72, 97,  Image.SCALE_DEFAULT);
         Player_Death_6R = Toolkit.getDefaultToolkit().getImage("Player_Death\\Right\\Player_Death_6R.png").getScaledInstance(72, 97,  Image.SCALE_DEFAULT);
 
+        Player_Death_1L = Toolkit.getDefaultToolkit().getImage("Player_Death\\Left\\Player_Death_1L.png").getScaledInstance(72, 97,  Image.SCALE_DEFAULT);
+        Player_Death_2L = Toolkit.getDefaultToolkit().getImage("Player_Death\\Left\\Player_Death_2L.png").getScaledInstance(72, 97,  Image.SCALE_DEFAULT);
+        Player_Death_3L = Toolkit.getDefaultToolkit().getImage("Player_Death\\Left\\Player_Death_3L.png").getScaledInstance(72, 97,  Image.SCALE_DEFAULT);
+        Player_Death_4L = Toolkit.getDefaultToolkit().getImage("Player_Death\\Left\\Player_Death_4L.png").getScaledInstance(72, 97,  Image.SCALE_DEFAULT);
+        Player_Death_5L = Toolkit.getDefaultToolkit().getImage("Player_Death\\Left\\Player_Death_5L.png").getScaledInstance(72, 97,  Image.SCALE_DEFAULT);
+        Player_Death_6L = Toolkit.getDefaultToolkit().getImage("Player_Death\\Left\\Player_Death_6L.png").getScaledInstance(72, 97,  Image.SCALE_DEFAULT);
+
+
+
+        //Hurt
         Player_Hurt_1R = Toolkit.getDefaultToolkit().getImage("Player_Hurt\\Right\\Player_Hurt_1R.png").getScaledInstance(72, 97, Image.SCALE_DEFAULT);
         Player_Hurt_2R = Toolkit.getDefaultToolkit().getImage("Player_Hurt\\Right\\Player_Hurt_2R.png").getScaledInstance(72, 97,  Image.SCALE_DEFAULT);
         Player_Hurt_3R = Toolkit.getDefaultToolkit().getImage("Player_Hurt\\Right\\Player_Hurt_3R.png").getScaledInstance(72, 97,  Image.SCALE_DEFAULT);
 
+        Player_Hurt_1L = Toolkit.getDefaultToolkit().getImage("Player_Hurt\\Left\\Player_Hurt_1L.png").getScaledInstance(72, 97, Image.SCALE_DEFAULT);
+        Player_Hurt_2L = Toolkit.getDefaultToolkit().getImage("Player_Hurt\\Left\\Player_Hurt_2L.png").getScaledInstance(72, 97, Image.SCALE_DEFAULT);
+        Player_Hurt_3L = Toolkit.getDefaultToolkit().getImage("Player_Hurt\\Left\\Player_Hurt_3L.png").getScaledInstance(72, 97, Image.SCALE_DEFAULT);
+
+
+        //Attack
         Player_Attack_1R = Toolkit.getDefaultToolkit().getImage("Player_Attack\\Right\\Player_Attack_1R.png").getScaledInstance(72, 97,  Image.SCALE_DEFAULT);
         Player_Attack_2R = Toolkit.getDefaultToolkit().getImage("Player_Attack\\Right\\Player_Attack_2R.png").getScaledInstance(72, 97,  Image.SCALE_DEFAULT);
         Player_Attack_3R = Toolkit.getDefaultToolkit().getImage("Player_Attack\\Right\\Player_Attack_3R.png").getScaledInstance(72, 97,  Image.SCALE_DEFAULT);
         Player_Attack_4R = Toolkit.getDefaultToolkit().getImage("Player_Attack\\Right\\Player_Attack_4R.png").getScaledInstance(72, 97,  Image.SCALE_DEFAULT);
         Player_Attack_5R = Toolkit.getDefaultToolkit().getImage("Player_Attack\\Right\\Player_Attack_5R.png").getScaledInstance(72, 97,  Image.SCALE_DEFAULT);
         Player_Attack_6R = Toolkit.getDefaultToolkit().getImage("Player_Attack\\Right\\Player_Attack_6R.png").getScaledInstance(72, 97,  Image.SCALE_DEFAULT);
+
+        Player_Attack_1L = Toolkit.getDefaultToolkit().getImage("Player_Attack\\Left\\Player_Attack_1L.png").getScaledInstance(72, 97,  Image.SCALE_DEFAULT);
+        Player_Attack_2L = Toolkit.getDefaultToolkit().getImage("Player_Attack\\Left\\Player_Attack_2L.png").getScaledInstance(72, 97,  Image.SCALE_DEFAULT);
+        Player_Attack_3L = Toolkit.getDefaultToolkit().getImage("Player_Attack\\Left\\Player_Attack_3L.png").getScaledInstance(72, 97,  Image.SCALE_DEFAULT);
+        Player_Attack_4L = Toolkit.getDefaultToolkit().getImage("Player_Attack\\Left\\Player_Attack_4L.png").getScaledInstance(72, 97,  Image.SCALE_DEFAULT);
+        Player_Attack_5L = Toolkit.getDefaultToolkit().getImage("Player_Attack\\Left\\Player_Attack_5L.png").getScaledInstance(72, 97,  Image.SCALE_DEFAULT);
+        Player_Attack_6L = Toolkit.getDefaultToolkit().getImage("Player_Attack\\Left\\Player_Attack_6L.png").getScaledInstance(72, 97,  Image.SCALE_DEFAULT);
 
     }
 
@@ -246,190 +364,389 @@ public class Panel extends JPanel {
         // Idle Animations
         if(tempPlayer.getState() == "Idle"){
 
-            //Depending on Frame Counter
-            if(IdleFrameCounter == 1){
-                g.drawImage(Player_Idle_1R, tempPlayer.getX(), tempPlayer.getY(), this);
-                IdleFrameCounter = 2;
+            if(tempPlayer.getDirection().equals("Left")){
+                //Depending on Frame Counter
+                if(IdleFrameCounter == 1){
+                    g.drawImage(Player_Idle_1L, tempPlayer.getX(), tempPlayer.getY(), this);
+                    IdleFrameCounter = 2;
+                }
+                else if(IdleFrameCounter == 2){
+                    g.drawImage(Player_Idle_2L, tempPlayer.getX(), tempPlayer.getY(), this);
+                    IdleFrameCounter = 3;
+                }
+                else if(IdleFrameCounter == 3){
+                    g.drawImage(Player_Idle_3L, tempPlayer.getX(), tempPlayer.getY(), this);
+                    IdleFrameCounter = 4;
+                }
+                else if(IdleFrameCounter == 4){
+                    g.drawImage(Player_Idle_4L, tempPlayer.getX(), tempPlayer.getY(), this);
+                    IdleFrameCounter = 1;
+                }
             }
-            else if(IdleFrameCounter == 2){
-                g.drawImage(Player_Idle_2R, tempPlayer.getX(), tempPlayer.getY(), this);
-                IdleFrameCounter = 3;
-            }
-            else if(IdleFrameCounter == 3){
-                g.drawImage(Player_Idle_3R, tempPlayer.getX(), tempPlayer.getY(), this);
-                IdleFrameCounter = 4;
-            }
-            else if(IdleFrameCounter == 4){
-                g.drawImage(Player_Idle_4R, tempPlayer.getX(), tempPlayer.getY(), this);
-                IdleFrameCounter = 1;
+
+            if(tempPlayer.getDirection().equals("Right")){
+                //Depending on Frame Counter
+                if(IdleFrameCounter == 1){
+                    g.drawImage(Player_Idle_1R, tempPlayer.getX(), tempPlayer.getY(), this);
+                    IdleFrameCounter = 2;
+                }
+                else if(IdleFrameCounter == 2){
+                    g.drawImage(Player_Idle_2R, tempPlayer.getX(), tempPlayer.getY(), this);
+                    IdleFrameCounter = 3;
+                }
+                else if(IdleFrameCounter == 3){
+                    g.drawImage(Player_Idle_3R, tempPlayer.getX(), tempPlayer.getY(), this);
+                    IdleFrameCounter = 4;
+                }
+                else if(IdleFrameCounter == 4){
+                    g.drawImage(Player_Idle_4R, tempPlayer.getX(), tempPlayer.getY(), this);
+                    IdleFrameCounter = 1;
+                }
             }
 
         }
         if(tempPlayer.getState() == "Walking"){
             
+            if(tempPlayer.getDirection().equals("Left")){
+                //Depending on Frame Counter
+                if(WalkingFrameCounter == 1){
+                    g.drawImage(Player_Walking_1L, tempPlayer.getX(), tempPlayer.getY(), this);
+                    WalkingFrameCounter = 2;
+                }
+                else if(WalkingFrameCounter == 2){
+                    g.drawImage(Player_Walking_2L, tempPlayer.getX(), tempPlayer.getY(), this);
+                    WalkingFrameCounter = 3;
+                }
+                else if(WalkingFrameCounter == 3){
+                    g.drawImage(Player_Walking_3L, tempPlayer.getX(), tempPlayer.getY(), this);
+                    WalkingFrameCounter = 4;
+                }
+                else if(WalkingFrameCounter == 4){
+                    g.drawImage(Player_Walking_4L, tempPlayer.getX(), tempPlayer.getY(), this);
+                    WalkingFrameCounter = 5;
+                }
+                else if(WalkingFrameCounter == 5){
+                    g.drawImage(Player_Walking_5L, tempPlayer.getX(), tempPlayer.getY(), this);
+                    WalkingFrameCounter = 6;
+                }
+                else if(WalkingFrameCounter == 6){
+                    g.drawImage(Player_Walking_6L, tempPlayer.getX(), tempPlayer.getY(), this);
+                    WalkingFrameCounter = 1;
+                    tempPlayer.setState("Idle");
+                }
+            }
 
-
-            //Depending on Frame Counter
-            if(WalkingFrameCounter == 1){
-                g.drawImage(Player_Walking_1R, tempPlayer.getX(), tempPlayer.getY(), this);
-                WalkingFrameCounter = 2;
-            }
-            else if(WalkingFrameCounter == 2){
-                g.drawImage(Player_Walking_2R, tempPlayer.getX(), tempPlayer.getY(), this);
-                WalkingFrameCounter = 3;
-            }
-            else if(WalkingFrameCounter == 3){
-                g.drawImage(Player_Walking_3R, tempPlayer.getX(), tempPlayer.getY(), this);
-                WalkingFrameCounter = 4;
-            }
-            else if(WalkingFrameCounter == 4){
-                g.drawImage(Player_Walking_4R, tempPlayer.getX(), tempPlayer.getY(), this);
-                WalkingFrameCounter = 5;
-            }
-            else if(WalkingFrameCounter == 5){
-                g.drawImage(Player_Walking_5R, tempPlayer.getX(), tempPlayer.getY(), this);
-                WalkingFrameCounter = 6;
-            }
-            else if(WalkingFrameCounter == 6){
-                g.drawImage(Player_Walking_6R, tempPlayer.getX(), tempPlayer.getY(), this);
-                WalkingFrameCounter = 1;
-                tempPlayer.setState("Idle");
+            if(tempPlayer.getDirection().equals("Right")){
+                //Depending on Frame Counter
+                if(WalkingFrameCounter == 1){
+                    g.drawImage(Player_Walking_1R, tempPlayer.getX(), tempPlayer.getY(), this);
+                    WalkingFrameCounter = 2;
+                }
+                else if(WalkingFrameCounter == 2){
+                    g.drawImage(Player_Walking_2R, tempPlayer.getX(), tempPlayer.getY(), this);
+                    WalkingFrameCounter = 3;
+                }
+                else if(WalkingFrameCounter == 3){
+                    g.drawImage(Player_Walking_3R, tempPlayer.getX(), tempPlayer.getY(), this);
+                    WalkingFrameCounter = 4;
+                }
+                else if(WalkingFrameCounter == 4){
+                    g.drawImage(Player_Walking_4R, tempPlayer.getX(), tempPlayer.getY(), this);
+                    WalkingFrameCounter = 5;
+                }
+                else if(WalkingFrameCounter == 5){
+                    g.drawImage(Player_Walking_5R, tempPlayer.getX(), tempPlayer.getY(), this);
+                    WalkingFrameCounter = 6;
+                }
+                else if(WalkingFrameCounter == 6){
+                    g.drawImage(Player_Walking_6R, tempPlayer.getX(), tempPlayer.getY(), this);
+                    WalkingFrameCounter = 1;
+                    tempPlayer.setState("Idle");
+                }
             }
         }
         if(tempPlayer.getState() == "Running"){
-            
-            //Depending on Frame Counter
-            if(RunningFrameCounter == 1){
-                g.drawImage(Player_Running_1R, tempPlayer.getX(), tempPlayer.getY(), this);
-                RunningFrameCounter = 2;
+            if(tempPlayer.getDirection().equals("Left")){
+                //Depending on Frame Counter
+                if(RunningFrameCounter == 1){
+                    g.drawImage(Player_Running_1L, tempPlayer.getX(), tempPlayer.getY(), this);
+                    RunningFrameCounter = 2;
+                }
+                else if(RunningFrameCounter == 2){
+                    g.drawImage(Player_Running_2L, tempPlayer.getX(), tempPlayer.getY(), this);
+                    RunningFrameCounter = 3;
+                }
+                else if(RunningFrameCounter == 3){
+                    g.drawImage(Player_Running_3L, tempPlayer.getX(), tempPlayer.getY(), this);
+                    RunningFrameCounter = 4;
+                }
+                else if(RunningFrameCounter == 4){
+                    g.drawImage(Player_Running_4L, tempPlayer.getX(), tempPlayer.getY(), this);
+                    RunningFrameCounter = 5;
+                }
+                else if(RunningFrameCounter == 5){
+                    g.drawImage(Player_Running_5L, tempPlayer.getX(), tempPlayer.getY(), this);
+                    RunningFrameCounter = 6;
+                }
+                else if(RunningFrameCounter == 6){
+                    g.drawImage(Player_Running_6L, tempPlayer.getX(), tempPlayer.getY(), this);
+                    RunningFrameCounter = 1;
+                    tempPlayer.setState("Idle");
+                }
             }
-            else if(RunningFrameCounter == 2){
-                g.drawImage(Player_Running_2R, tempPlayer.getX(), tempPlayer.getY(), this);
-                RunningFrameCounter = 3;
-            }
-            else if(RunningFrameCounter == 3){
-                g.drawImage(Player_Running_3R, tempPlayer.getX(), tempPlayer.getY(), this);
-                RunningFrameCounter = 4;
-            }
-            else if(RunningFrameCounter == 4){
-                g.drawImage(Player_Running_4R, tempPlayer.getX(), tempPlayer.getY(), this);
-                RunningFrameCounter = 5;
-            }
-            else if(RunningFrameCounter == 5){
-                g.drawImage(Player_Running_5R, tempPlayer.getX(), tempPlayer.getY(), this);
-                RunningFrameCounter = 6;
-            }
-            else if(RunningFrameCounter == 6){
-                g.drawImage(Player_Running_6R, tempPlayer.getX(), tempPlayer.getY(), this);
-                RunningFrameCounter = 1;
-                tempPlayer.setState("Idle");
+            if(tempPlayer.getDirection().equals("Right")){
+                //Depending on Frame Counter
+                if(RunningFrameCounter == 1){
+                    g.drawImage(Player_Running_1R, tempPlayer.getX(), tempPlayer.getY(), this);
+                    RunningFrameCounter = 2;
+                }
+                else if(RunningFrameCounter == 2){
+                    g.drawImage(Player_Running_2R, tempPlayer.getX(), tempPlayer.getY(), this);
+                    RunningFrameCounter = 3;
+                }
+                else if(RunningFrameCounter == 3){
+                    g.drawImage(Player_Running_3R, tempPlayer.getX(), tempPlayer.getY(), this);
+                    RunningFrameCounter = 4;
+                }
+                else if(RunningFrameCounter == 4){
+                    g.drawImage(Player_Running_4R, tempPlayer.getX(), tempPlayer.getY(), this);
+                    RunningFrameCounter = 5;
+                }
+                else if(RunningFrameCounter == 5){
+                    g.drawImage(Player_Running_5R, tempPlayer.getX(), tempPlayer.getY(), this);
+                    RunningFrameCounter = 6;
+                }
+                else if(RunningFrameCounter == 6){
+                    g.drawImage(Player_Running_6R, tempPlayer.getX(), tempPlayer.getY(), this);
+                    RunningFrameCounter = 1;
+                    tempPlayer.setState("Idle");
+                }
             }
         }
         if(tempPlayer.getState() == "Jumping"){
             
-            //Depending on Frame Counter
-            if(JumpingFrameCounter == 1){
-                g.drawImage(Player_Jumping_1R, tempPlayer.getX(), tempPlayer.getY(), this);
-                JumpingFrameCounter = 2;
+            if(tempPlayer.getDirection().equals("Left")){
+
+                //Depending on Frame Counter
+                if(JumpingFrameCounter == 1){
+                    g.drawImage(Player_Jumping_1L, tempPlayer.getX(), tempPlayer.getY(), this);
+                    JumpingFrameCounter = 2;
+                }
+                else if(JumpingFrameCounter == 2){
+                    g.drawImage(Player_Jumping_2L, tempPlayer.getX(), tempPlayer.getY(), this);
+                    JumpingFrameCounter = 3;
+                }
+                else if(JumpingFrameCounter == 3){
+                    g.drawImage(Player_Jumping_3L, tempPlayer.getX(), tempPlayer.getY(), this);
+                    JumpingFrameCounter = 4;
+                }
+                else if(JumpingFrameCounter == 4){
+                    g.drawImage(Player_Jumping_4L, tempPlayer.getX(), tempPlayer.getY(), this);
+                    JumpingFrameCounter = 5;
+                }
+                else if(JumpingFrameCounter == 5){
+                    g.drawImage(Player_Jumping_5L, tempPlayer.getX(), tempPlayer.getY(), this);
+                    JumpingFrameCounter = 6;
+                }
+                else if(JumpingFrameCounter == 6){
+                    g.drawImage(Player_Jumping_6L, tempPlayer.getX(), tempPlayer.getY(), this);
+                    JumpingFrameCounter = 1;
+                    tempPlayer.setState("Idle");
+                }
             }
-            else if(JumpingFrameCounter == 2){
-                g.drawImage(Player_Jumping_2R, tempPlayer.getX(), tempPlayer.getY(), this);
-                JumpingFrameCounter = 3;
-            }
-            else if(JumpingFrameCounter == 3){
-                g.drawImage(Player_Jumping_3R, tempPlayer.getX(), tempPlayer.getY(), this);
-                JumpingFrameCounter = 4;
-            }
-            else if(JumpingFrameCounter == 4){
-                g.drawImage(Player_Jumping_4R, tempPlayer.getX(), tempPlayer.getY(), this);
-                JumpingFrameCounter = 5;
-            }
-            else if(JumpingFrameCounter == 5){
-                g.drawImage(Player_Jumping_5R, tempPlayer.getX(), tempPlayer.getY(), this);
-                JumpingFrameCounter = 6;
-            }
-            else if(JumpingFrameCounter == 6){
-                g.drawImage(Player_Jumping_6R, tempPlayer.getX(), tempPlayer.getY(), this);
-                JumpingFrameCounter = 1;
-                tempPlayer.setState("Idle");
+            if(tempPlayer.getDirection().equals("Right")){
+
+                //Depending on Frame Counter
+                if(JumpingFrameCounter == 1){
+                    g.drawImage(Player_Jumping_1R, tempPlayer.getX(), tempPlayer.getY(), this);
+                    JumpingFrameCounter = 2;
+                }
+                else if(JumpingFrameCounter == 2){
+                    g.drawImage(Player_Jumping_2R, tempPlayer.getX(), tempPlayer.getY(), this);
+                    JumpingFrameCounter = 3;
+                }
+                else if(JumpingFrameCounter == 3){
+                    g.drawImage(Player_Jumping_3R, tempPlayer.getX(), tempPlayer.getY(), this);
+                    JumpingFrameCounter = 4;
+                }
+                else if(JumpingFrameCounter == 4){
+                    g.drawImage(Player_Jumping_4R, tempPlayer.getX(), tempPlayer.getY(), this);
+                    JumpingFrameCounter = 5;
+                }
+                else if(JumpingFrameCounter == 5){
+                    g.drawImage(Player_Jumping_5R, tempPlayer.getX(), tempPlayer.getY(), this);
+                    JumpingFrameCounter = 6;
+                }
+                else if(JumpingFrameCounter == 6){
+                    g.drawImage(Player_Jumping_6R, tempPlayer.getX(), tempPlayer.getY(), this);
+                    JumpingFrameCounter = 1;
+                    tempPlayer.setState("Idle");
+                }
             }
         }
         if(tempPlayer.getState() == "Death"){
+
+            if(tempPlayer.getDirection().equals("Left")){
+
+                //Depending on Frame Counter
+                if(DeathFrameCounter == 1){
+                    g.drawImage(Player_Death_1L, tempPlayer.getX(), tempPlayer.getY(), this);
+                    DeathFrameCounter = 2;
+                }
+                else if(DeathFrameCounter == 2){
+                    g.drawImage(Player_Death_2L, tempPlayer.getX(), tempPlayer.getY(), this);
+                    DeathFrameCounter = 3;
+                }
+                else if(DeathFrameCounter == 3){
+                    g.drawImage(Player_Death_3L, tempPlayer.getX(), tempPlayer.getY(), this);
+                    DeathFrameCounter = 4;
+                }
+                else if(DeathFrameCounter == 4){
+                    g.drawImage(Player_Death_4L, tempPlayer.getX(), tempPlayer.getY(), this);
+                    DeathFrameCounter = 5;
+                }
+                else if(DeathFrameCounter == 5){
+                    g.drawImage(Player_Death_5L, tempPlayer.getX(), tempPlayer.getY(), this);
+                    DeathFrameCounter = 6;
+                }
+                else if(DeathFrameCounter == 6){
+                    g.drawImage(Player_Death_6L, tempPlayer.getX(), tempPlayer.getY(), this);
+                    DeathFrameCounter = 1;
+                    tempPlayer.setState("Idle");
+                }
+            }
             
-            //Depending on Frame Counter
-            if(DeathFrameCounter == 1){
-                g.drawImage(Player_Death_1R, tempPlayer.getX(), tempPlayer.getY(), this);
-                DeathFrameCounter = 2;
-            }
-            else if(DeathFrameCounter == 2){
-                g.drawImage(Player_Death_2R, tempPlayer.getX(), tempPlayer.getY(), this);
-                DeathFrameCounter = 3;
-            }
-            else if(DeathFrameCounter == 3){
-                g.drawImage(Player_Death_3R, tempPlayer.getX(), tempPlayer.getY(), this);
-                DeathFrameCounter = 4;
-            }
-            else if(DeathFrameCounter == 4){
-                g.drawImage(Player_Death_4R, tempPlayer.getX(), tempPlayer.getY(), this);
-                DeathFrameCounter = 5;
-            }
-            else if(DeathFrameCounter == 5){
-                g.drawImage(Player_Death_5R, tempPlayer.getX(), tempPlayer.getY(), this);
-                DeathFrameCounter = 6;
-            }
-            else if(DeathFrameCounter == 6){
-                g.drawImage(Player_Death_6R, tempPlayer.getX(), tempPlayer.getY(), this);
-                DeathFrameCounter = 1;
-                tempPlayer.setState("Idle");
+            if(tempPlayer.getDirection().equals("Right")){
+
+                //Depending on Frame Counter
+                if(DeathFrameCounter == 1){
+                    g.drawImage(Player_Death_1R, tempPlayer.getX(), tempPlayer.getY(), this);
+                    DeathFrameCounter = 2;
+                }
+                else if(DeathFrameCounter == 2){
+                    g.drawImage(Player_Death_2R, tempPlayer.getX(), tempPlayer.getY(), this);
+                    DeathFrameCounter = 3;
+                }
+                else if(DeathFrameCounter == 3){
+                    g.drawImage(Player_Death_3R, tempPlayer.getX(), tempPlayer.getY(), this);
+                    DeathFrameCounter = 4;
+                }
+                else if(DeathFrameCounter == 4){
+                    g.drawImage(Player_Death_4R, tempPlayer.getX(), tempPlayer.getY(), this);
+                    DeathFrameCounter = 5;
+                }
+                else if(DeathFrameCounter == 5){
+                    g.drawImage(Player_Death_5R, tempPlayer.getX(), tempPlayer.getY(), this);
+                    DeathFrameCounter = 6;
+                }
+                else if(DeathFrameCounter == 6){
+                    g.drawImage(Player_Death_6R, tempPlayer.getX(), tempPlayer.getY(), this);
+                    DeathFrameCounter = 1;
+                    tempPlayer.setState("Idle");
+                }
             }
         }
         if(tempPlayer.getState() == "Hurt"){
 
-            //Depending on Frame Counter
-            if(HurtFrameCounter == 1){
-                g.drawImage(Player_Hurt_1R, tempPlayer.getX(), tempPlayer.getY(), this);
-                HurtFrameCounter = 2;
+            if(tempPlayer.getDirection().equals("Right")){
+                //Depending on Frame Counter
+                if(HurtFrameCounter == 1){
+                    g.drawImage(Player_Hurt_1R, tempPlayer.getX(), tempPlayer.getY(), this);
+                    HurtFrameCounter = 2;
+                }
+                else if(HurtFrameCounter == 2){
+                    g.drawImage(Player_Hurt_2R, tempPlayer.getX(), tempPlayer.getY(), this);
+                    HurtFrameCounter = 3;
+                }
+                else if(HurtFrameCounter == 3){
+                    g.drawImage(Player_Hurt_3R, tempPlayer.getX(), tempPlayer.getY(), this);
+                    HurtFrameCounter = 1;
+                    tempPlayer.setState("Idle");
+                }
             }
-            else if(HurtFrameCounter == 2){
-                g.drawImage(Player_Hurt_2R, tempPlayer.getX(), tempPlayer.getY(), this);
-                HurtFrameCounter = 3;
-            }
-            else if(HurtFrameCounter == 3){
-                g.drawImage(Player_Hurt_3R, tempPlayer.getX(), tempPlayer.getY(), this);
-                HurtFrameCounter = 1;
-                tempPlayer.setState("Idle");
+
+            if(tempPlayer.getDirection().equals("Left")){
+                //Depending on Frame Counter
+                if(HurtFrameCounter == 1){
+                    g.drawImage(Player_Hurt_1L, tempPlayer.getX(), tempPlayer.getY(), this);
+                    HurtFrameCounter = 2;
+                }
+                else if(HurtFrameCounter == 2){
+                    g.drawImage(Player_Hurt_2L, tempPlayer.getX(), tempPlayer.getY(), this);
+                    HurtFrameCounter = 3;
+                }
+                else if(HurtFrameCounter == 3){
+                    g.drawImage(Player_Hurt_3L, tempPlayer.getX(), tempPlayer.getY(), this);
+                    HurtFrameCounter = 1;
+                    tempPlayer.setState("Idle");
+                }
             }
 
         }
         if(tempPlayer.getState() == "Attack"){
             
-            //Depending on Frame Counter
-            if(AttackFrameCounter == 1){
-                g.drawImage(Player_Attack_1R, tempPlayer.getX(), tempPlayer.getY(), this);
-                AttackFrameCounter = 2;
+
+            if(tempPlayer.getDirection().equals("Right")){
+                    
+                //Depending on Frame Counter
+                if(AttackFrameCounter == 1){
+                    g.drawImage(Player_Attack_1R, tempPlayer.getX(), tempPlayer.getY(), this);
+                    AttackFrameCounter = 2;
+                }
+                else if(AttackFrameCounter == 2){
+                    g.drawImage(Player_Attack_2R, tempPlayer.getX(), tempPlayer.getY(), this);
+                    AttackFrameCounter = 3;
+                }
+                else if(AttackFrameCounter == 3){
+                    g.drawImage(Player_Attack_3R, tempPlayer.getX(), tempPlayer.getY(), this);
+                    AttackFrameCounter = 4;
+                }
+                else if(AttackFrameCounter == 4){
+                    g.drawImage(Player_Attack_4R, tempPlayer.getX(), tempPlayer.getY(), this);
+                    AttackFrameCounter = 5;
+                }
+                else if(AttackFrameCounter == 5){
+                    g.drawImage(Player_Attack_5R, tempPlayer.getX(), tempPlayer.getY(), this);
+                    AttackFrameCounter = 6;
+                }
+                else if(AttackFrameCounter == 6){
+                    g.drawImage(Player_Attack_6R, tempPlayer.getX(), tempPlayer.getY(), this);
+                    AttackFrameCounter = 1;
+                    tempPlayer.setState("Idle");
+                }
             }
-            else if(AttackFrameCounter == 2){
-                g.drawImage(Player_Attack_2R, tempPlayer.getX(), tempPlayer.getY(), this);
-                AttackFrameCounter = 3;
-            }
-            else if(AttackFrameCounter == 3){
-                g.drawImage(Player_Attack_3R, tempPlayer.getX(), tempPlayer.getY(), this);
-                AttackFrameCounter = 4;
-            }
-            else if(AttackFrameCounter == 4){
-                g.drawImage(Player_Attack_4R, tempPlayer.getX(), tempPlayer.getY(), this);
-                AttackFrameCounter = 5;
-            }
-            else if(AttackFrameCounter == 5){
-                g.drawImage(Player_Attack_5R, tempPlayer.getX(), tempPlayer.getY(), this);
-                AttackFrameCounter = 6;
-            }
-            else if(AttackFrameCounter == 6){
-                g.drawImage(Player_Attack_6R, tempPlayer.getX(), tempPlayer.getY(), this);
-                AttackFrameCounter = 1;
-                tempPlayer.setState("Idle");
+        
+            if(tempPlayer.getDirection().equals("Left")){
+                    
+                //Depending on Frame Counter
+                if(AttackFrameCounter == 1){
+                    g.drawImage(Player_Attack_1L, tempPlayer.getX(), tempPlayer.getY(), this);
+                    AttackFrameCounter = 2;
+                }
+                else if(AttackFrameCounter == 2){
+                    g.drawImage(Player_Attack_2L, tempPlayer.getX(), tempPlayer.getY(), this);
+                    AttackFrameCounter = 3;
+                }
+                else if(AttackFrameCounter == 3){
+                    g.drawImage(Player_Attack_3L, tempPlayer.getX(), tempPlayer.getY(), this);
+                    AttackFrameCounter = 4;
+                }
+                else if(AttackFrameCounter == 4){
+                    g.drawImage(Player_Attack_4L, tempPlayer.getX(), tempPlayer.getY(), this);
+                    AttackFrameCounter = 5;
+                }
+                else if(AttackFrameCounter == 5){
+                    g.drawImage(Player_Attack_5L, tempPlayer.getX(), tempPlayer.getY(), this);
+                    AttackFrameCounter = 6;
+                }
+                else if(AttackFrameCounter == 6){
+                    g.drawImage(Player_Attack_6L, tempPlayer.getX(), tempPlayer.getY(), this);
+                    AttackFrameCounter = 1;
+                    tempPlayer.setState("Idle");
+                }
             }
         }
+
 
     }
 
