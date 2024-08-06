@@ -176,10 +176,10 @@ public class Panel extends JPanel {
         /////////////////////
 
         //Idle
-        Player_Idle_1R = Toolkit.getDefaultToolkit().getImage("Player\\Player_Idle\\Right\\Player_Idle_1R.png").getScaledInstance(72, 97, Image.SCALE_DEFAULT);
-        Player_Idle_2R = Toolkit.getDefaultToolkit().getImage("Player\\Player_Idle\\Right\\Player_Idle_2R.png").getScaledInstance(72, 97,  Image.SCALE_DEFAULT);
-        Player_Idle_3R = Toolkit.getDefaultToolkit().getImage("Player\\Player_Idle\\Right\\Player_Idle_3R.png").getScaledInstance(72, 97,  Image.SCALE_DEFAULT);
-        Player_Idle_4R = Toolkit.getDefaultToolkit().getImage("Player\\Player_Idle\\Right\\Player_Idle_4R.png").getScaledInstance(72, 97,  Image.SCALE_DEFAULT);
+        Player_Idle_1R = Toolkit.getDefaultToolkit().getImage("C:\\Users\\Nobea\\OneDrive\\Desktop\\SteamMan\\SteamMan_idle\\Right\\00_SteamMan_idle.png").getScaledInstance(72, 97, Image.SCALE_DEFAULT);
+        Player_Idle_2R = Toolkit.getDefaultToolkit().getImage("C:\\Users\\Nobea\\OneDrive\\Desktop\\SteamMan\\SteamMan_idle\\Right\\01_SteamMan_idle.png").getScaledInstance(72, 97,  Image.SCALE_DEFAULT);
+        Player_Idle_3R = Toolkit.getDefaultToolkit().getImage("C:\\Users\\Nobea\\OneDrive\\Desktop\\SteamMan\\SteamMan_idle\\Right\\02_SteamMan_idle.png").getScaledInstance(72, 97,  Image.SCALE_DEFAULT);
+        Player_Idle_4R = Toolkit.getDefaultToolkit().getImage("C:\\Users\\Nobea\\OneDrive\\Desktop\\SteamMan\\SteamMan_idle\\Right\\03_SteamMan_idle.png").getScaledInstance(72, 97,  Image.SCALE_DEFAULT);
         
         Player_Idle_1L = Toolkit.getDefaultToolkit().getImage("Player\\Player_Idle\\Left\\Player_Idle_1L.png").getScaledInstance(72, 97, Image.SCALE_DEFAULT);
         Player_Idle_2L = Toolkit.getDefaultToolkit().getImage("Player\\Player_Idle\\Left\\Player_Idle_2L.png").getScaledInstance(72, 97, Image.SCALE_DEFAULT);
