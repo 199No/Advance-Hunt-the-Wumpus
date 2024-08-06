@@ -176,106 +176,106 @@ public class Panel extends JPanel {
         /////////////////////
 
         //Idle
-        Player_Idle_1R = Toolkit.getDefaultToolkit().getImage("Player_Idle\\Right\\Player_Idle_1R.png").getScaledInstance(72, 97, Image.SCALE_DEFAULT);
-        Player_Idle_2R = Toolkit.getDefaultToolkit().getImage("Player_Idle\\Right\\Player_Idle_2R.png").getScaledInstance(72, 97,  Image.SCALE_DEFAULT);
-        Player_Idle_3R = Toolkit.getDefaultToolkit().getImage("Player_Idle\\Right\\Player_Idle_3R.png").getScaledInstance(72, 97,  Image.SCALE_DEFAULT);
-        Player_Idle_4R = Toolkit.getDefaultToolkit().getImage("Player_Idle\\Right\\Player_Idle_4R.png").getScaledInstance(72, 97,  Image.SCALE_DEFAULT);
+        Player_Idle_1R = Toolkit.getDefaultToolkit().getImage("Player\\Player_Idle\\Right\\Player_Idle_1R.png").getScaledInstance(72, 97, Image.SCALE_DEFAULT);
+        Player_Idle_2R = Toolkit.getDefaultToolkit().getImage("Player\\Player_Idle\\Right\\Player_Idle_2R.png").getScaledInstance(72, 97,  Image.SCALE_DEFAULT);
+        Player_Idle_3R = Toolkit.getDefaultToolkit().getImage("Player\\Player_Idle\\Right\\Player_Idle_3R.png").getScaledInstance(72, 97,  Image.SCALE_DEFAULT);
+        Player_Idle_4R = Toolkit.getDefaultToolkit().getImage("Player\\Player_Idle\\Right\\Player_Idle_4R.png").getScaledInstance(72, 97,  Image.SCALE_DEFAULT);
         
-        Player_Idle_1L = Toolkit.getDefaultToolkit().getImage("Player_Idle\\Left\\Player_Idle_1L.png").getScaledInstance(72, 97, Image.SCALE_DEFAULT);
-        Player_Idle_2L = Toolkit.getDefaultToolkit().getImage("Player_Idle\\Left\\Player_Idle_2L.png").getScaledInstance(72, 97, Image.SCALE_DEFAULT);
-        Player_Idle_3L = Toolkit.getDefaultToolkit().getImage("Player_Idle\\Left\\Player_Idle_3L.png").getScaledInstance(72, 97, Image.SCALE_DEFAULT);
-        Player_Idle_4L = Toolkit.getDefaultToolkit().getImage("Player_Idle\\Left\\Player_Idle_4L.png").getScaledInstance(72, 97, Image.SCALE_DEFAULT);
+        Player_Idle_1L = Toolkit.getDefaultToolkit().getImage("Player\\Player_Idle\\Left\\Player_Idle_1L.png").getScaledInstance(72, 97, Image.SCALE_DEFAULT);
+        Player_Idle_2L = Toolkit.getDefaultToolkit().getImage("Player\\Player_Idle\\Left\\Player_Idle_2L.png").getScaledInstance(72, 97, Image.SCALE_DEFAULT);
+        Player_Idle_3L = Toolkit.getDefaultToolkit().getImage("Player\\Player_Idle\\Left\\Player_Idle_3L.png").getScaledInstance(72, 97, Image.SCALE_DEFAULT);
+        Player_Idle_4L = Toolkit.getDefaultToolkit().getImage("Player\\Player_Idle\\Left\\Player_Idle_4L.png").getScaledInstance(72, 97, Image.SCALE_DEFAULT);
 
         
         //Walking
-        Player_Walking_1R = Toolkit.getDefaultToolkit().getImage("Player_Walking\\Right\\Player_Walking_1R.png").getScaledInstance(72, 97,  Image.SCALE_DEFAULT);
-        Player_Walking_2R = Toolkit.getDefaultToolkit().getImage("Player_Walking\\Right\\Player_Walking_2R.png").getScaledInstance(72, 97,  Image.SCALE_DEFAULT);
-        Player_Walking_3R = Toolkit.getDefaultToolkit().getImage("Player_Walking\\Right\\Player_Walking_3R.png").getScaledInstance(72, 97,  Image.SCALE_DEFAULT);
-        Player_Walking_4R = Toolkit.getDefaultToolkit().getImage("Player_Walking\\Right\\Player_Walking_4R.png").getScaledInstance(72, 97,  Image.SCALE_DEFAULT);
-        Player_Walking_5R = Toolkit.getDefaultToolkit().getImage("Player_Walking\\Right\\Player_Walking_5R.png").getScaledInstance(72, 97,  Image.SCALE_DEFAULT);
-        Player_Walking_6R = Toolkit.getDefaultToolkit().getImage("Player_Walking\\Right\\Player_Walking_6R.png").getScaledInstance(72, 97,  Image.SCALE_DEFAULT);
+        Player_Walking_1R = Toolkit.getDefaultToolkit().getImage("Player\\Player_Walking\\Right\\Player_Walking_1R.png").getScaledInstance(72, 97,  Image.SCALE_DEFAULT);
+        Player_Walking_2R = Toolkit.getDefaultToolkit().getImage("Player\\Player_Walking\\Right\\Player_Walking_2R.png").getScaledInstance(72, 97,  Image.SCALE_DEFAULT);
+        Player_Walking_3R = Toolkit.getDefaultToolkit().getImage("Player\\Player_Walking\\Right\\Player_Walking_3R.png").getScaledInstance(72, 97,  Image.SCALE_DEFAULT);
+        Player_Walking_4R = Toolkit.getDefaultToolkit().getImage("Player\\Player_Walking\\Right\\Player_Walking_4R.png").getScaledInstance(72, 97,  Image.SCALE_DEFAULT);
+        Player_Walking_5R = Toolkit.getDefaultToolkit().getImage("Player\\Player_Walking\\Right\\Player_Walking_5R.png").getScaledInstance(72, 97,  Image.SCALE_DEFAULT);
+        Player_Walking_6R = Toolkit.getDefaultToolkit().getImage("Player\\Player_Walking\\Right\\Player_Walking_6R.png").getScaledInstance(72, 97,  Image.SCALE_DEFAULT);
 
-        Player_Walking_1L = Toolkit.getDefaultToolkit().getImage("Player_Walking\\Left\\Player_Walking_1L.png").getScaledInstance(72, 97,  Image.SCALE_DEFAULT);
-        Player_Walking_2L = Toolkit.getDefaultToolkit().getImage("Player_Walking\\Left\\Player_Walking_2L.png").getScaledInstance(72, 97,  Image.SCALE_DEFAULT);
-        Player_Walking_3L = Toolkit.getDefaultToolkit().getImage("Player_Walking\\Left\\Player_Walking_3L.png").getScaledInstance(72, 97,  Image.SCALE_DEFAULT);
-        Player_Walking_4L = Toolkit.getDefaultToolkit().getImage("Player_Walking\\Left\\Player_Walking_4L.png").getScaledInstance(72, 97,  Image.SCALE_DEFAULT);
-        Player_Walking_5L = Toolkit.getDefaultToolkit().getImage("Player_Walking\\Left\\Player_Walking_5L.png").getScaledInstance(72, 97,  Image.SCALE_DEFAULT);
-        Player_Walking_6L = Toolkit.getDefaultToolkit().getImage("Player_Walking\\Left\\Player_Walking_6L.png").getScaledInstance(72, 97,  Image.SCALE_DEFAULT);
+        Player_Walking_1L = Toolkit.getDefaultToolkit().getImage("Player\\Player_Walking\\Left\\Player_Walking_1L.png").getScaledInstance(72, 97,  Image.SCALE_DEFAULT);
+        Player_Walking_2L = Toolkit.getDefaultToolkit().getImage("Player\\Player_Walking\\Left\\Player_Walking_2L.png").getScaledInstance(72, 97,  Image.SCALE_DEFAULT);
+        Player_Walking_3L = Toolkit.getDefaultToolkit().getImage("Player\\Player_Walking\\Left\\Player_Walking_3L.png").getScaledInstance(72, 97,  Image.SCALE_DEFAULT);
+        Player_Walking_4L = Toolkit.getDefaultToolkit().getImage("Player\\Player_Walking\\Left\\Player_Walking_4L.png").getScaledInstance(72, 97,  Image.SCALE_DEFAULT);
+        Player_Walking_5L = Toolkit.getDefaultToolkit().getImage("Player\\Player_Walking\\Left\\Player_Walking_5L.png").getScaledInstance(72, 97,  Image.SCALE_DEFAULT);
+        Player_Walking_6L = Toolkit.getDefaultToolkit().getImage("Player\\Player_Walking\\Left\\Player_Walking_6L.png").getScaledInstance(72, 97,  Image.SCALE_DEFAULT);
 
 
         //Running
-        Player_Running_1R = Toolkit.getDefaultToolkit().getImage("Player_Running\\Right\\Player_Running_1R.png").getScaledInstance(72, 97,  Image.SCALE_DEFAULT);
-        Player_Running_2R = Toolkit.getDefaultToolkit().getImage("Player_Running\\Right\\Player_Running_2R.png").getScaledInstance(72, 97,  Image.SCALE_DEFAULT);
-        Player_Running_3R = Toolkit.getDefaultToolkit().getImage("Player_Running\\Right\\Player_Running_3R.png").getScaledInstance(72, 97,  Image.SCALE_DEFAULT);
-        Player_Running_4R = Toolkit.getDefaultToolkit().getImage("Player_Running\\Right\\Player_Running_4R.png").getScaledInstance(72, 97,  Image.SCALE_DEFAULT);
-        Player_Running_5R = Toolkit.getDefaultToolkit().getImage("Player_Running\\Right\\Player_Running_5R.png").getScaledInstance(72, 97,  Image.SCALE_DEFAULT);
-        Player_Running_6R = Toolkit.getDefaultToolkit().getImage("Player_Running\\Right\\Player_Running_6R.png").getScaledInstance(72, 97,  Image.SCALE_DEFAULT);
+        Player_Running_1R = Toolkit.getDefaultToolkit().getImage("Player\\Player_Running\\Right\\Player_Running_1R.png").getScaledInstance(72, 97,  Image.SCALE_DEFAULT);
+        Player_Running_2R = Toolkit.getDefaultToolkit().getImage("Player\\Player_Running\\Right\\Player_Running_2R.png").getScaledInstance(72, 97,  Image.SCALE_DEFAULT);
+        Player_Running_3R = Toolkit.getDefaultToolkit().getImage("Player\\Player_Running\\Right\\Player_Running_3R.png").getScaledInstance(72, 97,  Image.SCALE_DEFAULT);
+        Player_Running_4R = Toolkit.getDefaultToolkit().getImage("Player\\Player_Running\\Right\\Player_Running_4R.png").getScaledInstance(72, 97,  Image.SCALE_DEFAULT);
+        Player_Running_5R = Toolkit.getDefaultToolkit().getImage("Player\\Player_Running\\Right\\Player_Running_5R.png").getScaledInstance(72, 97,  Image.SCALE_DEFAULT);
+        Player_Running_6R = Toolkit.getDefaultToolkit().getImage("Player\\Player_Running\\Right\\Player_Running_6R.png").getScaledInstance(72, 97,  Image.SCALE_DEFAULT);
 
-        Player_Running_1L = Toolkit.getDefaultToolkit().getImage("Player_Running\\Left\\Player_Running_1L.png").getScaledInstance(72, 97,  Image.SCALE_DEFAULT);
-        Player_Running_2L = Toolkit.getDefaultToolkit().getImage("Player_Running\\Left\\Player_Running_2L.png").getScaledInstance(72, 97,  Image.SCALE_DEFAULT);
-        Player_Running_3L = Toolkit.getDefaultToolkit().getImage("Player_Running\\Left\\Player_Running_3L.png").getScaledInstance(72, 97,  Image.SCALE_DEFAULT);
-        Player_Running_4L = Toolkit.getDefaultToolkit().getImage("Player_Running\\Left\\Player_Running_4L.png").getScaledInstance(72, 97,  Image.SCALE_DEFAULT);
-        Player_Running_5L = Toolkit.getDefaultToolkit().getImage("Player_Running\\Left\\Player_Running_5L.png").getScaledInstance(72, 97,  Image.SCALE_DEFAULT);
-        Player_Running_6L = Toolkit.getDefaultToolkit().getImage("Player_Running\\Left\\Player_Running_6L.png").getScaledInstance(72, 97,  Image.SCALE_DEFAULT);
+        Player_Running_1L = Toolkit.getDefaultToolkit().getImage("Player\\Player_Running\\Left\\Player_Running_1L.png").getScaledInstance(72, 97,  Image.SCALE_DEFAULT);
+        Player_Running_2L = Toolkit.getDefaultToolkit().getImage("Player\\Player_Running\\Left\\Player_Running_2L.png").getScaledInstance(72, 97,  Image.SCALE_DEFAULT);
+        Player_Running_3L = Toolkit.getDefaultToolkit().getImage("Player\\Player_Running\\Left\\Player_Running_3L.png").getScaledInstance(72, 97,  Image.SCALE_DEFAULT);
+        Player_Running_4L = Toolkit.getDefaultToolkit().getImage("Player\\Player_Running\\Left\\Player_Running_4L.png").getScaledInstance(72, 97,  Image.SCALE_DEFAULT);
+        Player_Running_5L = Toolkit.getDefaultToolkit().getImage("Player\\Player_Running\\Left\\Player_Running_5L.png").getScaledInstance(72, 97,  Image.SCALE_DEFAULT);
+        Player_Running_6L = Toolkit.getDefaultToolkit().getImage("Player\\Player_Running\\Left\\Player_Running_6L.png").getScaledInstance(72, 97,  Image.SCALE_DEFAULT);
 
 
         //Jumping
-        Player_Jumping_1R = Toolkit.getDefaultToolkit().getImage("Player_Jumping\\Right\\Player_Jump_1R.png").getScaledInstance(72, 97,  Image.SCALE_DEFAULT);
-        Player_Jumping_2R = Toolkit.getDefaultToolkit().getImage("Player_Jumping\\Right\\Player_Jump_2R.png").getScaledInstance(72, 97,  Image.SCALE_DEFAULT);
-        Player_Jumping_3R = Toolkit.getDefaultToolkit().getImage("Player_Jumping\\Right\\Player_Jump_3R.png").getScaledInstance(72, 97,  Image.SCALE_DEFAULT);
-        Player_Jumping_4R = Toolkit.getDefaultToolkit().getImage("Player_Jumping\\Right\\Player_Jump_4R.png").getScaledInstance(72, 97,  Image.SCALE_DEFAULT);
-        Player_Jumping_5R = Toolkit.getDefaultToolkit().getImage("Player_Jumping\\Right\\Player_Jump_5R.png").getScaledInstance(72, 97,  Image.SCALE_DEFAULT);
-        Player_Jumping_6R = Toolkit.getDefaultToolkit().getImage("Player_Jumping\\Right\\Player_Jump_6R.png").getScaledInstance(72, 97,  Image.SCALE_DEFAULT);
+        Player_Jumping_1R = Toolkit.getDefaultToolkit().getImage("Player\\Player_Jumping\\Right\\Player_Jump_1R.png").getScaledInstance(72, 97,  Image.SCALE_DEFAULT);
+        Player_Jumping_2R = Toolkit.getDefaultToolkit().getImage("Player\\Player_Jumping\\Right\\Player_Jump_2R.png").getScaledInstance(72, 97,  Image.SCALE_DEFAULT);
+        Player_Jumping_3R = Toolkit.getDefaultToolkit().getImage("Player\\Player_Jumping\\Right\\Player_Jump_3R.png").getScaledInstance(72, 97,  Image.SCALE_DEFAULT);
+        Player_Jumping_4R = Toolkit.getDefaultToolkit().getImage("Player\\Player_Jumping\\Right\\Player_Jump_4R.png").getScaledInstance(72, 97,  Image.SCALE_DEFAULT);
+        Player_Jumping_5R = Toolkit.getDefaultToolkit().getImage("Player\\Player_Jumping\\Right\\Player_Jump_5R.png").getScaledInstance(72, 97,  Image.SCALE_DEFAULT);
+        Player_Jumping_6R = Toolkit.getDefaultToolkit().getImage("Player\\Player_Jumping\\Right\\Player_Jump_6R.png").getScaledInstance(72, 97,  Image.SCALE_DEFAULT);
 
-        Player_Jumping_1L = Toolkit.getDefaultToolkit().getImage("Player_Jumping\\Left\\Player_Jump_1L.png").getScaledInstance(72, 97,  Image.SCALE_DEFAULT);
-        Player_Jumping_2L = Toolkit.getDefaultToolkit().getImage("Player_Jumping\\Left\\Player_Jump_2L.png").getScaledInstance(72, 97,  Image.SCALE_DEFAULT);
-        Player_Jumping_3L = Toolkit.getDefaultToolkit().getImage("Player_Jumping\\Left\\Player_Jump_3L.png").getScaledInstance(72, 97,  Image.SCALE_DEFAULT);
-        Player_Jumping_4L = Toolkit.getDefaultToolkit().getImage("Player_Jumping\\Left\\Player_Jump_4L.png").getScaledInstance(72, 97,  Image.SCALE_DEFAULT);
-        Player_Jumping_5L = Toolkit.getDefaultToolkit().getImage("Player_Jumping\\Left\\Player_Jump_5L.png").getScaledInstance(72, 97,  Image.SCALE_DEFAULT);
-        Player_Jumping_6L = Toolkit.getDefaultToolkit().getImage("Player_Jumping\\Left\\Player_Jump_6L.png").getScaledInstance(72, 97,  Image.SCALE_DEFAULT);
+        Player_Jumping_1L = Toolkit.getDefaultToolkit().getImage("Player\\Player_Jumping\\Left\\Player_Jump_1L.png").getScaledInstance(72, 97,  Image.SCALE_DEFAULT);
+        Player_Jumping_2L = Toolkit.getDefaultToolkit().getImage("Player\\Player_Jumping\\Left\\Player_Jump_2L.png").getScaledInstance(72, 97,  Image.SCALE_DEFAULT);
+        Player_Jumping_3L = Toolkit.getDefaultToolkit().getImage("Player\\Player_Jumping\\Left\\Player_Jump_3L.png").getScaledInstance(72, 97,  Image.SCALE_DEFAULT);
+        Player_Jumping_4L = Toolkit.getDefaultToolkit().getImage("Player\\Player_Jumping\\Left\\Player_Jump_4L.png").getScaledInstance(72, 97,  Image.SCALE_DEFAULT);
+        Player_Jumping_5L = Toolkit.getDefaultToolkit().getImage("Player\\Player_Jumping\\Left\\Player_Jump_5L.png").getScaledInstance(72, 97,  Image.SCALE_DEFAULT);
+        Player_Jumping_6L = Toolkit.getDefaultToolkit().getImage("Player\\Player_Jumping\\Left\\Player_Jump_6L.png").getScaledInstance(72, 97,  Image.SCALE_DEFAULT);
 
 
         //Death
-        Player_Death_1R = Toolkit.getDefaultToolkit().getImage("Player_Death\\Right\\Player_Death_1R.png").getScaledInstance(72, 97,  Image.SCALE_DEFAULT);
-        Player_Death_2R = Toolkit.getDefaultToolkit().getImage("Player_Death\\Right\\Player_Death_2R.png").getScaledInstance(72, 97,  Image.SCALE_DEFAULT);
-        Player_Death_3R = Toolkit.getDefaultToolkit().getImage("Player_Death\\Right\\Player_Death_3R.png").getScaledInstance(72, 97,  Image.SCALE_DEFAULT);
-        Player_Death_4R = Toolkit.getDefaultToolkit().getImage("Player_Death\\Right\\Player_Death_4R.png").getScaledInstance(72, 97,  Image.SCALE_DEFAULT);
-        Player_Death_5R = Toolkit.getDefaultToolkit().getImage("Player_Death\\Right\\Player_Death_5R.png").getScaledInstance(72, 97,  Image.SCALE_DEFAULT);
-        Player_Death_6R = Toolkit.getDefaultToolkit().getImage("Player_Death\\Right\\Player_Death_6R.png").getScaledInstance(72, 97,  Image.SCALE_DEFAULT);
+        Player_Death_1R = Toolkit.getDefaultToolkit().getImage("Player\\Player_Death\\Right\\Player_Death_1R.png").getScaledInstance(72, 97,  Image.SCALE_DEFAULT);
+        Player_Death_2R = Toolkit.getDefaultToolkit().getImage("Player\\Player_Death\\Right\\Player_Death_2R.png").getScaledInstance(72, 97,  Image.SCALE_DEFAULT);
+        Player_Death_3R = Toolkit.getDefaultToolkit().getImage("Player\\Player_Death\\Right\\Player_Death_3R.png").getScaledInstance(72, 97,  Image.SCALE_DEFAULT);
+        Player_Death_4R = Toolkit.getDefaultToolkit().getImage("Player\\Player_Death\\Right\\Player_Death_4R.png").getScaledInstance(72, 97,  Image.SCALE_DEFAULT);
+        Player_Death_5R = Toolkit.getDefaultToolkit().getImage("Player\\Player_Death\\Right\\Player_Death_5R.png").getScaledInstance(72, 97,  Image.SCALE_DEFAULT);
+        Player_Death_6R = Toolkit.getDefaultToolkit().getImage("Player\\Player_Death\\Right\\Player_Death_6R.png").getScaledInstance(72, 97,  Image.SCALE_DEFAULT);
 
-        Player_Death_1L = Toolkit.getDefaultToolkit().getImage("Player_Death\\Left\\Player_Death_1L.png").getScaledInstance(72, 97,  Image.SCALE_DEFAULT);
-        Player_Death_2L = Toolkit.getDefaultToolkit().getImage("Player_Death\\Left\\Player_Death_2L.png").getScaledInstance(72, 97,  Image.SCALE_DEFAULT);
-        Player_Death_3L = Toolkit.getDefaultToolkit().getImage("Player_Death\\Left\\Player_Death_3L.png").getScaledInstance(72, 97,  Image.SCALE_DEFAULT);
-        Player_Death_4L = Toolkit.getDefaultToolkit().getImage("Player_Death\\Left\\Player_Death_4L.png").getScaledInstance(72, 97,  Image.SCALE_DEFAULT);
-        Player_Death_5L = Toolkit.getDefaultToolkit().getImage("Player_Death\\Left\\Player_Death_5L.png").getScaledInstance(72, 97,  Image.SCALE_DEFAULT);
-        Player_Death_6L = Toolkit.getDefaultToolkit().getImage("Player_Death\\Left\\Player_Death_6L.png").getScaledInstance(72, 97,  Image.SCALE_DEFAULT);
+        Player_Death_1L = Toolkit.getDefaultToolkit().getImage("Player\\Player_Death\\Left\\Player_Death_1L.png").getScaledInstance(72, 97,  Image.SCALE_DEFAULT);
+        Player_Death_2L = Toolkit.getDefaultToolkit().getImage("Player\\Player_Death\\Left\\Player_Death_2L.png").getScaledInstance(72, 97,  Image.SCALE_DEFAULT);
+        Player_Death_3L = Toolkit.getDefaultToolkit().getImage("Player\\Player_Death\\Left\\Player_Death_3L.png").getScaledInstance(72, 97,  Image.SCALE_DEFAULT);
+        Player_Death_4L = Toolkit.getDefaultToolkit().getImage("Player\\Player_Death\\Left\\Player_Death_4L.png").getScaledInstance(72, 97,  Image.SCALE_DEFAULT);
+        Player_Death_5L = Toolkit.getDefaultToolkit().getImage("Player\\Player_Death\\Left\\Player_Death_5L.png").getScaledInstance(72, 97,  Image.SCALE_DEFAULT);
+        Player_Death_6L = Toolkit.getDefaultToolkit().getImage("Player\\Player_Death\\Left\\Player_Death_6L.png").getScaledInstance(72, 97,  Image.SCALE_DEFAULT);
 
 
 
         //Hurt
-        Player_Hurt_1R = Toolkit.getDefaultToolkit().getImage("Player_Hurt\\Right\\Player_Hurt_1R.png").getScaledInstance(72, 97, Image.SCALE_DEFAULT);
-        Player_Hurt_2R = Toolkit.getDefaultToolkit().getImage("Player_Hurt\\Right\\Player_Hurt_2R.png").getScaledInstance(72, 97,  Image.SCALE_DEFAULT);
-        Player_Hurt_3R = Toolkit.getDefaultToolkit().getImage("Player_Hurt\\Right\\Player_Hurt_3R.png").getScaledInstance(72, 97,  Image.SCALE_DEFAULT);
+        Player_Hurt_1R = Toolkit.getDefaultToolkit().getImage("Player\\Player_Hurt\\Right\\Player_Hurt_1R.png").getScaledInstance(72, 97, Image.SCALE_DEFAULT);
+        Player_Hurt_2R = Toolkit.getDefaultToolkit().getImage("Player\\Player_Hurt\\Right\\Player_Hurt_2R.png").getScaledInstance(72, 97,  Image.SCALE_DEFAULT);
+        Player_Hurt_3R = Toolkit.getDefaultToolkit().getImage("Player\\Player_Hurt\\Right\\Player_Hurt_3R.png").getScaledInstance(72, 97,  Image.SCALE_DEFAULT);
 
-        Player_Hurt_1L = Toolkit.getDefaultToolkit().getImage("Player_Hurt\\Left\\Player_Hurt_1L.png").getScaledInstance(72, 97, Image.SCALE_DEFAULT);
-        Player_Hurt_2L = Toolkit.getDefaultToolkit().getImage("Player_Hurt\\Left\\Player_Hurt_2L.png").getScaledInstance(72, 97, Image.SCALE_DEFAULT);
-        Player_Hurt_3L = Toolkit.getDefaultToolkit().getImage("Player_Hurt\\Left\\Player_Hurt_3L.png").getScaledInstance(72, 97, Image.SCALE_DEFAULT);
+        Player_Hurt_1L = Toolkit.getDefaultToolkit().getImage("Player\\Player_Hurt\\Left\\Player_Hurt_1L.png").getScaledInstance(72, 97, Image.SCALE_DEFAULT);
+        Player_Hurt_2L = Toolkit.getDefaultToolkit().getImage("Player\\Player_Hurt\\Left\\Player_Hurt_2L.png").getScaledInstance(72, 97, Image.SCALE_DEFAULT);
+        Player_Hurt_3L = Toolkit.getDefaultToolkit().getImage("Player\\Player_Hurt\\Left\\Player_Hurt_3L.png").getScaledInstance(72, 97, Image.SCALE_DEFAULT);
 
 
         //Attack
-        Player_Attack_1R = Toolkit.getDefaultToolkit().getImage("Player_Attack\\Right\\Player_Attack_1R.png").getScaledInstance(72, 97,  Image.SCALE_DEFAULT);
-        Player_Attack_2R = Toolkit.getDefaultToolkit().getImage("Player_Attack\\Right\\Player_Attack_2R.png").getScaledInstance(72, 97,  Image.SCALE_DEFAULT);
-        Player_Attack_3R = Toolkit.getDefaultToolkit().getImage("Player_Attack\\Right\\Player_Attack_3R.png").getScaledInstance(72, 97,  Image.SCALE_DEFAULT);
-        Player_Attack_4R = Toolkit.getDefaultToolkit().getImage("Player_Attack\\Right\\Player_Attack_4R.png").getScaledInstance(72, 97,  Image.SCALE_DEFAULT);
-        Player_Attack_5R = Toolkit.getDefaultToolkit().getImage("Player_Attack\\Right\\Player_Attack_5R.png").getScaledInstance(72, 97,  Image.SCALE_DEFAULT);
-        Player_Attack_6R = Toolkit.getDefaultToolkit().getImage("Player_Attack\\Right\\Player_Attack_6R.png").getScaledInstance(72, 97,  Image.SCALE_DEFAULT);
+        Player_Attack_1R = Toolkit.getDefaultToolkit().getImage("Player\\Player_Attack\\Right\\Player_Attack_1R.png").getScaledInstance(72, 97,  Image.SCALE_DEFAULT);
+        Player_Attack_2R = Toolkit.getDefaultToolkit().getImage("Player\\Player_Attack\\Right\\Player_Attack_2R.png").getScaledInstance(72, 97,  Image.SCALE_DEFAULT);
+        Player_Attack_3R = Toolkit.getDefaultToolkit().getImage("Player\\Player_Attack\\Right\\Player_Attack_3R.png").getScaledInstance(72, 97,  Image.SCALE_DEFAULT);
+        Player_Attack_4R = Toolkit.getDefaultToolkit().getImage("Player\\Player_Attack\\Right\\Player_Attack_4R.png").getScaledInstance(72, 97,  Image.SCALE_DEFAULT);
+        Player_Attack_5R = Toolkit.getDefaultToolkit().getImage("Player\\Player_Attack\\Right\\Player_Attack_5R.png").getScaledInstance(72, 97,  Image.SCALE_DEFAULT);
+        Player_Attack_6R = Toolkit.getDefaultToolkit().getImage("Player\\Player_Attack\\Right\\Player_Attack_6R.png").getScaledInstance(72, 97,  Image.SCALE_DEFAULT);
 
-        Player_Attack_1L = Toolkit.getDefaultToolkit().getImage("Player_Attack\\Left\\Player_Attack_1L.png").getScaledInstance(72, 97,  Image.SCALE_DEFAULT);
-        Player_Attack_2L = Toolkit.getDefaultToolkit().getImage("Player_Attack\\Left\\Player_Attack_2L.png").getScaledInstance(72, 97,  Image.SCALE_DEFAULT);
-        Player_Attack_3L = Toolkit.getDefaultToolkit().getImage("Player_Attack\\Left\\Player_Attack_3L.png").getScaledInstance(72, 97,  Image.SCALE_DEFAULT);
-        Player_Attack_4L = Toolkit.getDefaultToolkit().getImage("Player_Attack\\Left\\Player_Attack_4L.png").getScaledInstance(72, 97,  Image.SCALE_DEFAULT);
-        Player_Attack_5L = Toolkit.getDefaultToolkit().getImage("Player_Attack\\Left\\Player_Attack_5L.png").getScaledInstance(72, 97,  Image.SCALE_DEFAULT);
-        Player_Attack_6L = Toolkit.getDefaultToolkit().getImage("Player_Attack\\Left\\Player_Attack_6L.png").getScaledInstance(72, 97,  Image.SCALE_DEFAULT);
+        Player_Attack_1L = Toolkit.getDefaultToolkit().getImage("Player\\Player_Attack\\Left\\Player_Attack_1L.png").getScaledInstance(72, 97,  Image.SCALE_DEFAULT);
+        Player_Attack_2L = Toolkit.getDefaultToolkit().getImage("Player\\Player_Attack\\Left\\Player_Attack_2L.png").getScaledInstance(72, 97,  Image.SCALE_DEFAULT);
+        Player_Attack_3L = Toolkit.getDefaultToolkit().getImage("Player\\Player_Attack\\Left\\Player_Attack_3L.png").getScaledInstance(72, 97,  Image.SCALE_DEFAULT);
+        Player_Attack_4L = Toolkit.getDefaultToolkit().getImage("Player\\Player_Attack\\Left\\Player_Attack_4L.png").getScaledInstance(72, 97,  Image.SCALE_DEFAULT);
+        Player_Attack_5L = Toolkit.getDefaultToolkit().getImage("Player\\Player_Attack\\Left\\Player_Attack_5L.png").getScaledInstance(72, 97,  Image.SCALE_DEFAULT);
+        Player_Attack_6L = Toolkit.getDefaultToolkit().getImage("Player\\Player_Attack\\Left\\Player_Attack_6L.png").getScaledInstance(72, 97,  Image.SCALE_DEFAULT);
 
     }
 
