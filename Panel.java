@@ -181,26 +181,26 @@ public class Panel extends JPanel {
         Player_Idle_3R = Toolkit.getDefaultToolkit().getImage("SteamMan\\SteamMan_idle\\Right\\02_SteamMan_idle.png").getScaledInstance(72, 97,  Image.SCALE_DEFAULT);
         Player_Idle_4R = Toolkit.getDefaultToolkit().getImage("SteamMan\\SteamMan_idle\\Right\\03_SteamMan_idle.png").getScaledInstance(72, 97,  Image.SCALE_DEFAULT);
         
-        Player_Idle_1L = Toolkit.getDefaultToolkit().getImage("Player\\Player_Idle\\Left\\Player_Idle_1L.png").getScaledInstance(72, 97, Image.SCALE_DEFAULT);
-        Player_Idle_2L = Toolkit.getDefaultToolkit().getImage("Player\\Player_Idle\\Left\\Player_Idle_2L.png").getScaledInstance(72, 97, Image.SCALE_DEFAULT);
-        Player_Idle_3L = Toolkit.getDefaultToolkit().getImage("Player\\Player_Idle\\Left\\Player_Idle_3L.png").getScaledInstance(72, 97, Image.SCALE_DEFAULT);
-        Player_Idle_4L = Toolkit.getDefaultToolkit().getImage("Player\\Player_Idle\\Left\\Player_Idle_4L.png").getScaledInstance(72, 97, Image.SCALE_DEFAULT);
+        Player_Idle_1L = Toolkit.getDefaultToolkit().getImage("SteamMan\\SteamMan_idle\\Left\\00_SteamMan_idle.png").getScaledInstance(72, 97, Image.SCALE_DEFAULT);
+        Player_Idle_2L = Toolkit.getDefaultToolkit().getImage("SteamMan\\SteamMan_idle\\Left\\01_SteamMan_idle.png").getScaledInstance(72, 97, Image.SCALE_DEFAULT);
+        Player_Idle_3L = Toolkit.getDefaultToolkit().getImage("SteamMan\\SteamMan_idle\\Left\\02_SteamMan_idle.png").getScaledInstance(72, 97, Image.SCALE_DEFAULT);
+        Player_Idle_4L = Toolkit.getDefaultToolkit().getImage("SteamMan\\SteamMan_idle\\Left\\03_SteamMan_idle.png").getScaledInstance(72, 97, Image.SCALE_DEFAULT);
 
         
         //Walking
-        Player_Walking_1R = Toolkit.getDefaultToolkit().getImage("Player\\Player_Walking\\Right\\Player_Walking_1R.png").getScaledInstance(72, 97,  Image.SCALE_DEFAULT);
-        Player_Walking_2R = Toolkit.getDefaultToolkit().getImage("Player\\Player_Walking\\Right\\Player_Walking_2R.png").getScaledInstance(72, 97,  Image.SCALE_DEFAULT);
-        Player_Walking_3R = Toolkit.getDefaultToolkit().getImage("Player\\Player_Walking\\Right\\Player_Walking_3R.png").getScaledInstance(72, 97,  Image.SCALE_DEFAULT);
-        Player_Walking_4R = Toolkit.getDefaultToolkit().getImage("Player\\Player_Walking\\Right\\Player_Walking_4R.png").getScaledInstance(72, 97,  Image.SCALE_DEFAULT);
-        Player_Walking_5R = Toolkit.getDefaultToolkit().getImage("Player\\Player_Walking\\Right\\Player_Walking_5R.png").getScaledInstance(72, 97,  Image.SCALE_DEFAULT);
-        Player_Walking_6R = Toolkit.getDefaultToolkit().getImage("Player\\Player_Walking\\Right\\Player_Walking_6R.png").getScaledInstance(72, 97,  Image.SCALE_DEFAULT);
+        Player_Walking_1R = Toolkit.getDefaultToolkit().getImage("SteamMan\\SteamMan_walk\\Right\\00_SteamMan_walk.png").getScaledInstance(72, 97,  Image.SCALE_DEFAULT);
+        Player_Walking_2R = Toolkit.getDefaultToolkit().getImage("SteamMan\\SteamMan_walk\\Right\\01_SteamMan_walk.png").getScaledInstance(72, 97,  Image.SCALE_DEFAULT);
+        Player_Walking_3R = Toolkit.getDefaultToolkit().getImage("SteamMan\\SteamMan_walk\\Right\\02_SteamMan_walk.png").getScaledInstance(72, 97,  Image.SCALE_DEFAULT);
+        Player_Walking_4R = Toolkit.getDefaultToolkit().getImage("SteamMan\\SteamMan_walk\\Right\\03_SteamMan_walk.png").getScaledInstance(72, 97,  Image.SCALE_DEFAULT);
+        Player_Walking_5R = Toolkit.getDefaultToolkit().getImage("SteamMan\\SteamMan_walk\\Right\\04_SteamMan_walk.png").getScaledInstance(72, 97,  Image.SCALE_DEFAULT);
+        Player_Walking_6R = Toolkit.getDefaultToolkit().getImage("SteamMan\\SteamMan_walk\\Right\\05_SteamMan_walk.png").getScaledInstance(72, 97,  Image.SCALE_DEFAULT);
 
-        Player_Walking_1L = Toolkit.getDefaultToolkit().getImage("Player\\Player_Walking\\Left\\Player_Walking_1L.png").getScaledInstance(72, 97,  Image.SCALE_DEFAULT);
-        Player_Walking_2L = Toolkit.getDefaultToolkit().getImage("Player\\Player_Walking\\Left\\Player_Walking_2L.png").getScaledInstance(72, 97,  Image.SCALE_DEFAULT);
-        Player_Walking_3L = Toolkit.getDefaultToolkit().getImage("Player\\Player_Walking\\Left\\Player_Walking_3L.png").getScaledInstance(72, 97,  Image.SCALE_DEFAULT);
-        Player_Walking_4L = Toolkit.getDefaultToolkit().getImage("Player\\Player_Walking\\Left\\Player_Walking_4L.png").getScaledInstance(72, 97,  Image.SCALE_DEFAULT);
-        Player_Walking_5L = Toolkit.getDefaultToolkit().getImage("Player\\Player_Walking\\Left\\Player_Walking_5L.png").getScaledInstance(72, 97,  Image.SCALE_DEFAULT);
-        Player_Walking_6L = Toolkit.getDefaultToolkit().getImage("Player\\Player_Walking\\Left\\Player_Walking_6L.png").getScaledInstance(72, 97,  Image.SCALE_DEFAULT);
+        Player_Walking_1L = Toolkit.getDefaultToolkit().getImage("SteamMan\\SteamMan_walk\\Left\\00_SteamMan_walk.png").getScaledInstance(72, 97,  Image.SCALE_DEFAULT);
+        Player_Walking_2L = Toolkit.getDefaultToolkit().getImage("SteamMan\\SteamMan_walk\\Left\\01_SteamMan_walk.png").getScaledInstance(72, 97,  Image.SCALE_DEFAULT);
+        Player_Walking_3L = Toolkit.getDefaultToolkit().getImage("SteamMan\\SteamMan_walk\\Left\\02_SteamMan_walk.png").getScaledInstance(72, 97,  Image.SCALE_DEFAULT);
+        Player_Walking_4L = Toolkit.getDefaultToolkit().getImage("SteamMan\\SteamMan_walk\\Left\\03_SteamMan_walk.png").getScaledInstance(72, 97,  Image.SCALE_DEFAULT);
+        Player_Walking_5L = Toolkit.getDefaultToolkit().getImage("SteamMan\\SteamMan_walk\\Left\\04_SteamMan_walk.png").getScaledInstance(72, 97,  Image.SCALE_DEFAULT);
+        Player_Walking_6L = Toolkit.getDefaultToolkit().getImage("SteamMan\\SteamMan_walk\\Left\\05_SteamMan_walk.png").getScaledInstance(72, 97,  Image.SCALE_DEFAULT);
 
 
         //Running
