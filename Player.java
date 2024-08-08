@@ -2,8 +2,8 @@ class Player{
     private Panel panel;
     private String direction = "Right";
     private String name;
-    private int x = 218;
-    private int y = 198;
+    private int x = 100;
+    private int y = 190;
     private String state = "Idle";
 
     //Possible States

@@ -32,6 +32,7 @@ public class Panel extends JPanel {
 
     //Extra IMages int
     private int coin1X = 100;
+    private int trashcan1X = 150;
 
 
     ////////////////////////
@@ -47,6 +48,7 @@ public class Panel extends JPanel {
     private Image Background8;
 
     private Image coin1;
+    private Image trashcan1;
 
     ////////////////////////
     //   Player Images
@@ -170,6 +172,7 @@ public class Panel extends JPanel {
 
         //Misc Images
         coin1 = Toolkit.getDefaultToolkit().getImage("Objects\\Coin1.gif").getScaledInstance(75, 75, Image.SCALE_DEFAULT);
+        trashcan1 = Toolkit.getDefaultToolkit().getImage("Objects\\Trashcan.png").getScaledInstance(50, 100, Image.SCALE_DEFAULT);
 
         /////////////////////
         //Player Images 
@@ -293,6 +296,7 @@ public class Panel extends JPanel {
         Background8_Xint -= 5;
 
         coin1X -= 5;
+        trashcan1X -= 5;
     }
     public void moveBackgroundLeftWalk(){
         Background1_Xint += 5;
@@ -305,6 +309,7 @@ public class Panel extends JPanel {
         Background8_Xint += 5;
 
         coin1X += 5;
+        trashcan1X += 5;
 
 
     }
@@ -318,6 +323,7 @@ public class Panel extends JPanel {
         Background7_Xint -= 10;
         Background8_Xint -= 10;
         coin1X -= 10;
+        trashcan1X -= 10;
 
     }
     public void moveBackgroundLeftRun(){
@@ -331,6 +337,7 @@ public class Panel extends JPanel {
         Background8_Xint += 10;
 
         coin1X += 10;
+        trashcan1X += 10;
 
 
     }
@@ -356,7 +363,7 @@ public class Panel extends JPanel {
 
         //Drawing A ref Image
         g.drawImage(coin1, coin1X, 25, this);
-
+        g.drawImage(trashcan1, trashcan1X, 205, this);
 
 
 
